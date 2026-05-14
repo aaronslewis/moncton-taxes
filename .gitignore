@@ -28,3 +28,6 @@ Thumbs.db
 
 # Netlify
 .netlify
+
+# Claude Code local settings (per-developer permission overrides etc.)
+.claude/settings.local.json
