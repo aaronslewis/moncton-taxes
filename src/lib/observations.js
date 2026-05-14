@@ -6,13 +6,6 @@ function findSubItem(category, predicate) {
   return (category?.subItems || []).find(predicate);
 }
 
-function sumAcrossCategories(dataset, subItemPredicate) {
-  return dataset.categories.reduce((total, cat) => {
-    const match = findSubItem(cat, subItemPredicate);
-    return total + (match ? match.amount : 0);
-  }, 0);
-}
-
 function sortedByAmountAsc(dataset) {
   return [...dataset.categories].sort((a, b) => a.amount - b.amount);
 }
@@ -43,10 +36,12 @@ export function computeObservations(dataset) {
   const community = findCategory(dataset, 'community-services');
   const transit = findCategory(dataset, 'codiac-transpo');
   const sustainable = findCategory(dataset, 'sustainable-growth-and-development');
+  const governance = findCategory(dataset, 'governance-corp-management');
+  const legal = findCategory(dataset, 'legal-and-city-clerk');
 
   const rcmp = findSubItem(protective, (s) => /RCMP/i.test(s.name));
   const financeFiscal = findSubItem(finance, (s) => s.name === 'Fiscal Cost');
-  const wagesTotal = sumAcrossCategories(dataset, (s) => s.name === 'Wages & Benefits');
+  const fireWater = findSubItem(protective, (s) => s.name === 'Water Costs');
 
   const protectiveGrowth = protective.prev > 0
     ? (protective.amount - protective.prev) / protective.prev
@@ -62,6 +57,7 @@ export function computeObservations(dataset) {
     .reduce((s, c) => s + c.amount, 0);
 
   const communityToRcmpRatio = community.amount / rcmp.amount;
+  const govPlusLegal = governance.amount + legal.amount;
 
   return [
     {
@@ -100,13 +96,14 @@ export function computeObservations(dataset) {
         `${fmtPct0(communityToRcmpRatio)} of the Codiac RCMP contract on its own.`,
     },
     {
-      id: 'wages-share',
-      title: 'ROUGHLY $1 IN $3',
-      headline: `${fmtPct0(wagesTotal / total)} of the budget is wages`,
+      id: 'fire-hydrant-water',
+      title: 'WATER FOR THE FIRE TRUCKS',
+      headline: `${fmtM(fireWater.amount)} to fill the hydrants`,
       body:
-        `Adding up Wages & Benefits across every City department comes to about ${fmtM(wagesTotal)} ` +
-        `— close to a third of every property-tax dollar funds City of Moncton employees. ` +
-        `(RCMP officers are paid through the separate Codiac contract, so they're not in this figure.)`,
+        `One line inside Protective Services — labeled simply "Water Costs" — has the City paying ` +
+        `its own water utility about ${fmtM(fireWater.amount)} a year for fire-hydrant and tanker ` +
+        `supply. That single item is bigger than the Mayor/Council/CAO and Legal & City Clerk's ` +
+        `office budgets combined (${fmtM(govPlusLegal)}).`,
     },
     {
       id: 'only-cut',
