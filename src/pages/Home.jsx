@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import TaxInput from '../components/TaxInput.jsx';
 import BreakdownList from '../components/BreakdownList.jsx';
+import ObservationsGrid from '../components/ObservationsGrid.jsx';
 import { computeBreakdown } from '../lib/breakdown.js';
 import budget from '../data/budget-2026.json';
 
@@ -64,6 +65,20 @@ export default function Home() {
             properties also pay a provincial portion not covered here. Tap any category to
             see its line-item subcategories.
           </p>
+        </div>
+      </section>
+
+      <section className="page-section page-section-tinted">
+        <div className="container">
+          <div className="section-heading">
+            <h2>What stands out</h2>
+            <div className="section-divider" />
+          </div>
+          <p className="section-lede">
+            A few patterns worth noticing in the {budget.fiscalYear} numbers — pulled
+            directly from the budget data above.
+          </p>
+          <ObservationsGrid dataset={budget} />
         </div>
       </section>
     </>
