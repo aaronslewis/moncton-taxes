@@ -37,6 +37,9 @@ export default function Navbar() {
               <NavLink to="/" className={getNavLinkClass} end role="listitem">
                 Home
               </NavLink>
+              <NavLink to="/voices" className={getNavLinkClass} role="listitem">
+                Voices
+              </NavLink>
               <NavLink to="/methodology" className={getNavLinkClass} role="listitem">
                 Methodology
               </NavLink>
@@ -67,6 +70,9 @@ export default function Navbar() {
           <div className="container">
             <NavLink to="/" className={getMobileNavLinkClass} onClick={closeMenu} end>
               Home
+            </NavLink>
+            <NavLink to="/voices" className={getMobileNavLinkClass} onClick={closeMenu}>
+              Voices
             </NavLink>
             <NavLink to="/methodology" className={getMobileNavLinkClass} onClick={closeMenu}>
               Methodology

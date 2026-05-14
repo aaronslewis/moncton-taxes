@@ -44,9 +44,23 @@ export default function About() {
             your bill. That phase is in planning.
           </p>
 
-          <h2 className="mt-8">Get in touch</h2>
+          <h2 className="mt-8">Share your perspective</h2>
           <p>
-            Found an error? Have a suggestion? Want to help? Reach out via the{' '}
+            Every category on the <a href="/">home page</a> has a "Share your
+            perspective" panel — anonymous, no email required — and there's a global
+            prompt at the bottom of the page for big-picture thoughts. Common themes
+            get summarized publicly each week on the <a href="/voices">Voices</a> page;
+            individual messages are never published.
+          </p>
+          <p>
+            Each category also has an <em>Email your councilor about this</em> option
+            if you'd rather contact council directly. Moncton Taxes never sends mail
+            on your behalf — it just pre-fills a draft in your own mail app.
+          </p>
+
+          <h2 className="mt-8">Found an error or want to help?</h2>
+          <p>
+            Spotted a bug, broken number, or want to contribute? Reach out via the{' '}
             <a href="https://monctonvotes.ca" target="_blank" rel="noopener noreferrer">
               Moncton Votes contact page
             </a>{' '}

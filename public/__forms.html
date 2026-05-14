@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Form detection (Netlify)</title>
+  <meta name="robots" content="noindex, nofollow" />
+</head>
+<body>
+  <!--
+    This file exists solely so Netlify's build-time form detector registers
+    the form names. The real submissions come from the React app via
+    fetch POST. Do not link to this page; it is not for human consumption.
+  -->
+
+  <form name="category-feedback" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+    <input type="text" name="bot-field" />
+    <input type="text" name="category" />
+    <input type="text" name="categoryId" />
+    <textarea name="surprised"></textarea>
+    <input type="text" name="direction" />
+    <textarea name="why"></textarea>
+  </form>
+
+  <form name="big-picture-feedback" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+    <input type="text" name="bot-field" />
+    <textarea name="bigPicture"></textarea>
+  </form>
+</body>
+</html>
