@@ -1,0 +1,142 @@
+{
+  "fiscalYear": 2026,
+  "totalOperating": 236000000,
+  "totalOperatingPrev": 229200000,
+  "prevFiscalYear": 2025,
+  "taxRatePer100": 1.3614,
+  "sourceUrl": "https://open.moncton.ca/datasets/2024-2026-budget-document-final",
+  "sourceLabel": "City of Moncton 2024–2026 Budget Document (Final)",
+  "lastUpdated": "2026-05-13",
+  "dataStatus": "placeholder",
+  "dataStatusNote": "Category totals are placeholders derived from the November 2025 budget news release (Protective Services 31%, total operating $236M). Replace with exact line items transcribed from the budget PDF before launch.",
+  "categories": [
+    {
+      "id": "protective-services",
+      "name": "Protective Services",
+      "amount": 73160000,
+      "prev": 70000000,
+      "color": "#DC2626",
+      "description": "Codiac RCMP, Moncton Fire Department, bylaw enforcement, emergency preparedness.",
+      "subItems": [
+        { "name": "Codiac RCMP (policing)", "amount": 43896000 },
+        { "name": "Moncton Fire Department", "amount": 25606000 },
+        { "name": "Bylaw enforcement & inspections", "amount": 2195000 },
+        { "name": "Emergency preparedness & 911", "amount": 1463000 }
+      ]
+    },
+    {
+      "id": "transportation",
+      "name": "Transportation Services",
+      "amount": 47200000,
+      "prev": 48000000,
+      "color": "#2563EB",
+      "description": "Road maintenance, snow & ice control, public transit (Codiac Transpo), traffic signals, sidewalks.",
+      "subItems": [
+        { "name": "Roads, paving & street maintenance", "amount": 16520000 },
+        { "name": "Codiac Transpo (public transit)", "amount": 14160000 },
+        { "name": "Snow & ice control", "amount": 9440000 },
+        { "name": "Traffic signals & signage", "amount": 3776000 },
+        { "name": "Sidewalks & active transportation", "amount": 3304000 }
+      ]
+    },
+    {
+      "id": "recreation-cultural",
+      "name": "Recreation & Cultural Services",
+      "amount": 30700000,
+      "prev": 28500000,
+      "color": "#059669",
+      "description": "Parks, arenas, pools, the Avenir Centre, public library, festivals & events, community grants.",
+      "subItems": [
+        { "name": "Parks & open-space maintenance", "amount": 9210000 },
+        { "name": "Arenas, pools & recreation facilities", "amount": 8596000 },
+        { "name": "Avenir Centre operations", "amount": 4605000 },
+        { "name": "Moncton Public Library", "amount": 3684000 },
+        { "name": "Festivals, events & culture", "amount": 2456000 },
+        { "name": "Community grants & partnerships", "amount": 2149000 }
+      ]
+    },
+    {
+      "id": "general-government",
+      "name": "General Government",
+      "amount": 25960000,
+      "prev": 26500000,
+      "color": "#7C3AED",
+      "description": "Mayor & Council, City Manager's office, finance, HR, IT, legal, clerk, communications.",
+      "subItems": [
+        { "name": "Administration & City Manager's office", "amount": 7788000 },
+        { "name": "Finance & treasury", "amount": 5192000 },
+        { "name": "Information technology", "amount": 4674000 },
+        { "name": "Human resources", "amount": 3115000 },
+        { "name": "Legal & clerk", "amount": 2596000 },
+        { "name": "Mayor & Council", "amount": 1558000 },
+        { "name": "Communications & engagement", "amount": 1037000 }
+      ]
+    },
+    {
+      "id": "debt-servicing",
+      "name": "Debt Servicing",
+      "amount": 16520000,
+      "prev": 15800000,
+      "color": "#0891B2",
+      "description": "Interest and principal payments on existing long-term debt used to finance past capital projects (recreation facilities, infrastructure, etc.).",
+      "subItems": [
+        { "name": "Principal repayments on long-term debt", "amount": 9912000 },
+        { "name": "Interest on long-term debt", "amount": 6608000 }
+      ],
+      "footnote": "Servicing yesterday's borrowed capital — the cost of past infrastructure investments paid off over decades."
+    },
+    {
+      "id": "capital-transfer",
+      "name": "Transfer to Capital Reserve",
+      "amount": 14160000,
+      "prev": 13200000,
+      "color": "#EA580C",
+      "description": "Operating dollars moved into reserves to pay for future infrastructure: new roads, recreation facilities, equipment, vehicles. The City's primary 'pay-as-you-go' way to fund capital projects without borrowing.",
+      "subItems": [
+        { "name": "General Capital Reserve", "amount": 8496000 },
+        { "name": "Equipment & fleet reserve", "amount": 2832000 },
+        { "name": "Facilities & infrastructure reserve", "amount": 2832000 }
+      ],
+      "footnote": "This is how your property tax helps fund the City's separate $92M annual capital budget. The rest of the capital budget comes from debt, provincial/federal grants, and developer charges."
+    },
+    {
+      "id": "environmental-health",
+      "name": "Environmental Health",
+      "amount": 11800000,
+      "prev": 11200000,
+      "color": "#65A30D",
+      "description": "Solid waste collection, recycling, street cleaning, environmental services.",
+      "subItems": [
+        { "name": "Solid waste & recycling collection", "amount": 7080000 },
+        { "name": "Street cleaning", "amount": 2360000 },
+        { "name": "Environmental services & stewardship", "amount": 2360000 }
+      ]
+    },
+    {
+      "id": "environmental-development",
+      "name": "Environmental Development",
+      "amount": 11800000,
+      "prev": 11500000,
+      "color": "#CA8A04",
+      "description": "Urban planning, building inspection, economic development, tourism, downtown revitalization.",
+      "subItems": [
+        { "name": "Planning & development services", "amount": 4720000 },
+        { "name": "Economic development", "amount": 3540000 },
+        { "name": "Tourism & event attraction", "amount": 2360000 },
+        { "name": "Building inspection & permits", "amount": 1180000 }
+      ]
+    },
+    {
+      "id": "public-health",
+      "name": "Public Health",
+      "amount": 4700000,
+      "prev": 4500000,
+      "color": "#0EA5E9",
+      "description": "Public-health-related expenditures and transfers (e.g. social-housing partnerships, regional health programs).",
+      "subItems": [
+        { "name": "Regional public-health partnerships", "amount": 2820000 },
+        { "name": "Community housing & social programs", "amount": 1880000 }
+      ]
+    }
+  ]
+}
