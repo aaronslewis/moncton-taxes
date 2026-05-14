@@ -1,0 +1,5 @@
+# Soft-launch: site is using placeholder budget data while the full
+# 2024-2026 City of Moncton budget PDF is transcribed line-by-line.
+# Remove this file (or replace with an allow-all) before public launch.
+User-agent: *
+Disallow: /

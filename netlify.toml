@@ -24,3 +24,12 @@
   for = "/*.html"
   [headers.values]
     Cache-Control = "public, max-age=0, s-maxage=3600, must-revalidate"
+
+# SOFT-LAUNCH: REMOVE this whole block before public launch.
+# Sends X-Robots-Tag for every response so Google/Bing skip the site
+# even if they ignore robots.txt — defense in depth for the period
+# where budget figures are placeholders.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
