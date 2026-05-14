@@ -858,7 +858,7 @@ input, select, textarea {
 .observation-card {
   background: var(--bg-white);
   border: 1px solid var(--border);
-  border-top: 4px solid var(--obs-color, var(--accent));
+  border-top: 4px solid var(--accent);
   border-radius: var(--radius-lg);
   padding: var(--space-6);
   box-shadow: var(--shadow-sm);
@@ -872,7 +872,7 @@ input, select, textarea {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-weight: 700;
-  color: var(--obs-color, var(--text-muted));
+  color: var(--accent);
   margin: 0;
 }
 

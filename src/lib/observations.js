@@ -39,7 +39,6 @@ export function computeObservations(dataset) {
   const overallGrowth = totalPrev > 0 ? (total - totalPrev) / totalPrev : 0;
 
   const protective = findCategory(dataset, 'protective-services');
-  const operations = findCategory(dataset, 'operations-services');
   const finance = findCategory(dataset, 'finance-services');
   const community = findCategory(dataset, 'community-services');
   const transit = findCategory(dataset, 'codiac-transpo');
@@ -73,7 +72,6 @@ export function computeObservations(dataset) {
         `Just the Codiac RCMP contract — not counting Fire, bylaw, or emergency prep — is ` +
         `${fmtPct1(rcmp.amount / total)} of the operating budget. That single line is bigger than ` +
         `the City's ${smallestN} smallest departments combined (${fmtM(smallestSum)}).`,
-      accent: protective.color,
     },
     {
       id: 'police-growth',
@@ -83,7 +81,6 @@ export function computeObservations(dataset) {
         `While the City's total operating budget rose ${fmtPct1(overallGrowth)} year-over-year, ` +
         `Protective Services jumped from ${fmtM(protective.prev)} to ${fmtM(protective.amount)} — ` +
         `roughly ${(protectiveGrowth / overallGrowth).toFixed(1)}× the overall rate of growth.`,
-      accent: protective.color,
     },
     {
       id: 'debt-vs-transit',
@@ -92,7 +89,6 @@ export function computeObservations(dataset) {
       body:
         `Finance Services pays ${fmtM(financeFiscal.amount)} just to service the City's existing ` +
         `debt — more than the entire Codiac Transpo operating budget (${fmtM(transit.amount)}).`,
-      accent: finance.color,
     },
     {
       id: 'bang-for-buck',
@@ -102,7 +98,6 @@ export function computeObservations(dataset) {
         `Parks programming, arenas, pools, the Coliseum, Magnetic Hill Zoo, Resurgo Place, and ` +
         `the Moncton Public Library together cost ${fmtM(community.amount)} — about ` +
         `${fmtPct0(communityToRcmpRatio)} of the Codiac RCMP contract on its own.`,
-      accent: community.color,
     },
     {
       id: 'wages-share',
@@ -112,7 +107,6 @@ export function computeObservations(dataset) {
         `Adding up Wages & Benefits across every City department comes to about ${fmtM(wagesTotal)} ` +
         `— close to a third of every property-tax dollar funds City of Moncton employees. ` +
         `(RCMP officers are paid through the separate Codiac contract, so they're not in this figure.)`,
-      accent: operations.color,
     },
     {
       id: 'only-cut',
@@ -122,7 +116,6 @@ export function computeObservations(dataset) {
         `Despite Moncton being one of Canada's fastest-growing cities, Sustainable Growth & ` +
         `Development is the one department with a notable reduction — down from ` +
         `${fmtM(sustainable.prev)} to ${fmtM(sustainable.amount)}.`,
-      accent: sustainable.color,
     },
   ];
 }
