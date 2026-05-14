@@ -42,6 +42,7 @@ export const routes = [
       { index: true, element: <Home /> },
       { path: 'methodology', lazy: async () => ({ Component: (await import('./pages/Methodology.jsx')).default }) },
       { path: 'about',       lazy: async () => ({ Component: (await import('./pages/About.jsx')).default }) },
+      { path: 'voices',      lazy: async () => ({ Component: (await import('./pages/Voices.jsx')).default }) },
       { path: '*',           element: <NotFound /> },
     ],
   },

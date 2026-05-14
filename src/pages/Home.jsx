@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import TaxInput from '../components/TaxInput.jsx';
 import BreakdownList from '../components/BreakdownList.jsx';
 import ObservationsGrid from '../components/ObservationsGrid.jsx';
+import FeedbackPrompts from '../components/FeedbackPrompts.jsx';
 import { computeBreakdown } from '../lib/breakdown.js';
 import budget from '../data/budget-2026.json';
 
@@ -22,7 +23,8 @@ export default function Home() {
         <div className="container">
           <div className="hero-content">
             <h1>
-              Where do <span className="accent">my Moncton taxes</span> go?
+              Where do <span style={{ color: '#fff' }}>my</span>{' '}
+              <span className="accent">Moncton taxes</span> go?
             </h1>
             <p className="hero-body">
               Enter the property tax you paid the City of Moncton, and see exactly how it
@@ -79,6 +81,16 @@ export default function Home() {
             directly from the budget data above.
           </p>
           <ObservationsGrid dataset={budget} />
+        </div>
+      </section>
+
+      <section className="page-section">
+        <div className="container" style={{ maxWidth: 760 }}>
+          <div className="section-heading">
+            <h2>What would you change?</h2>
+            <div className="section-divider" />
+          </div>
+          <FeedbackPrompts variant="big-picture" />
         </div>
       </section>
     </>
