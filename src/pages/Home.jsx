@@ -21,7 +21,7 @@ export default function Home() {
         <div className="container">
           <div className="hero-content">
             <h1>
-              Where the heck did <span className="accent">my Moncton taxes</span> go?
+              Where do <span className="accent">my Moncton taxes</span> go?
             </h1>
             <p className="hero-body">
               Enter the property tax you paid the City of Moncton, and see exactly how it
