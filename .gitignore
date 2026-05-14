@@ -31,3 +31,10 @@ Thumbs.db
 
 # Claude Code local settings (per-developer permission overrides etc.)
 .claude/settings.local.json
+
+# Bulky budget-extraction artifacts (PDF + text dumps regeneratable from scripts).
+# We commit the Python scripts and extracted_facts.md, not these.
+budget-pdf/2024_2026_budget.pdf
+budget-pdf/text/
+budget-pdf/dept_summaries.txt
+src/data/*.proposed.json

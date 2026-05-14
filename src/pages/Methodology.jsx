@@ -35,19 +35,29 @@ export default function Methodology() {
             document covering three fiscal years; we use the {budget.fiscalYear} column.
           </p>
           <p>
-            Categories follow the standard <abbr title="Public Sector Accounting Board">PSAB</abbr>{' '}
-            municipal expense classifications used in Moncton's budget book: Protective
-            Services, Transportation, Recreation &amp; Cultural, General Government,
-            Environmental Health, Environmental Development, Public Health, and Fiscal
-            Services. We've separated Fiscal Services into <em>Debt Servicing</em> and{' '}
-            <em>Transfer to Capital Reserve</em> so you can see the difference between
-            paying off past borrowing and funding future infrastructure.
+            Categories on this site follow the City of Moncton's actual administrative
+            departments as published in the budget document: Protective Services,
+            Operations Services, Finance Services, Community Services, Codiac Transpo,
+            Grants, Sustainable Growth &amp; Development Services, Corporate Services,
+            Legal &amp; City Clerk Services, and Governance &amp; Corporate Management.
+            Each department's subcategories are <em>expense types</em> (wages, contracts,
+            fiscal cost, capital transfers, etc.) as the budget document publishes them
+            — the document doesn't break each department down by sub-function
+            (e.g. police vs fire), so neither do we.
+          </p>
+          <p>
+            One subcategory worth flagging: under Protective Services, the line{' '}
+            <em>&ldquo;Codiac Regional Policing Authority (RCMP)&rdquo;</em>{' '}
+            (${(41120703 / 1_000_000).toFixed(1)}M in 2026) is the City's contribution
+            to the tri-municipal policing authority that contracts the RCMP for Moncton,
+            Dieppe, and Riverview. The budget document labels this line as
+            &ldquo;CRPA&rdquo;; we've renamed it for clarity.
           </p>
 
-          {budget.dataStatus === 'placeholder' && (
+          {budget.dataStatusNote && (
             <div className="notice notice-info mt-6">
               <p>
-                <strong>Current data status: placeholder.</strong> {budget.dataStatusNote}
+                <strong>Data status:</strong> {budget.dataStatusNote}
               </p>
             </div>
           )}

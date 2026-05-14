@@ -1,141 +1,596 @@
 {
   "fiscalYear": 2026,
-  "totalOperating": 236000000,
-  "totalOperatingPrev": 229200000,
+  "totalOperating": 222471717,
+  "totalOperatingPrev": 216984804,
   "prevFiscalYear": 2025,
   "taxRatePer100": 1.3614,
-  "sourceUrl": "https://open.moncton.ca/datasets/2024-2026-budget-document-final",
-  "sourceLabel": "City of Moncton 2024–2026 Budget Document (Final)",
-  "lastUpdated": "2026-05-13",
-  "dataStatus": "placeholder",
-  "dataStatusNote": "Category totals are placeholders derived from the November 2025 budget news release (Protective Services 31%, total operating $236M). Replace with exact line items transcribed from the budget PDF before launch.",
+  "taxRateNote": "PROVISIONAL — 2026 rate is not in the 2024-2026 Budget Document; needs verification against November 2025 Council news release.",
+  "sourceUrl": "https://www5.moncton.ca/docs/councilmeetings/2023/2024_2026%20Budget_Document_Final.pdf",
+  "sourceLabel": "City of Moncton 2024-2026 Multi-Year Budget Document (Final)",
+  "lastUpdated": "2026-05-14",
+  "dataStatus": "transcribed-2024-2026-budget",
+  "dataStatusNote": "Top-level totals and per-department expense-type subcategories transcribed from the City of Moncton 2024-2026 Multi-Year Budget Document (published 2023). 2026 figures are the budgeted column. Does not yet include the November 2025 amendment if any.",
+  "bannerNote": "Figures shown are transcribed from the City of Moncton 2024-2026 Multi-Year Budget Document (2026 budgeted column). The 2026 property-tax rate is provisional pending verification against the November 2025 Council update.",
+  "schemaNotes": "Categories now reflect the City of Moncton's actual 10 administrative departments rather than PSAB-style functional classifications. Subitems are expense types (Wages, Contracts, Fiscal Cost, etc.) as published in the budget document — the document does not publish sub-function splits like 'RCMP vs Fire' in this format.",
   "categories": [
     {
       "id": "protective-services",
       "name": "Protective Services",
-      "amount": 73160000,
-      "prev": 70000000,
+      "amount": 71156443,
+      "prev": 64493389,
       "color": "#DC2626",
-      "description": "Codiac RCMP, Moncton Fire Department, bylaw enforcement, emergency preparedness.",
+      "description": "Codiac RCMP (policing), Moncton Fire Department, bylaw enforcement, and emergency preparedness.",
       "subItems": [
-        { "name": "Codiac RCMP (policing)", "amount": 43896000 },
-        { "name": "Moncton Fire Department", "amount": 25606000 },
-        { "name": "Bylaw enforcement & inspections", "amount": 2195000 },
-        { "name": "Emergency preparedness & 911", "amount": 1463000 }
+        {
+          "name": "Wages & Benefits",
+          "amount": 18573594
+        },
+        {
+          "name": "Wages Overtime",
+          "amount": 177571
+        },
+        {
+          "name": "Communication",
+          "amount": 114950
+        },
+        {
+          "name": "Contracts",
+          "amount": 3285341
+        },
+        {
+          "name": "Codiac Regional Policing Authority (RCMP)",
+          "amount": 41120703
+        },
+        {
+          "name": "Equipment",
+          "amount": 63937
+        },
+        {
+          "name": "Insurance & Property Taxes",
+          "amount": 436013
+        },
+        {
+          "name": "Maintenance & Repairs",
+          "amount": 880836
+        },
+        {
+          "name": "Professional Development",
+          "amount": 185986
+        },
+        {
+          "name": "Professional Services - Other",
+          "amount": 33080
+        },
+        {
+          "name": "Promotional",
+          "amount": 9216
+        },
+        {
+          "name": "Supplies & Materials",
+          "amount": 1370136
+        },
+        {
+          "name": "Utilities",
+          "amount": 342968
+        },
+        {
+          "name": "Water Costs",
+          "amount": 4574134
+        },
+        {
+          "name": "Transfers/Recoveries",
+          "amount": -12022
+        }
       ]
     },
     {
-      "id": "transportation",
-      "name": "Transportation Services",
-      "amount": 47200000,
-      "prev": 48000000,
+      "id": "operations-services",
+      "name": "Operations Services",
+      "amount": 44557995,
+      "prev": 44035203,
       "color": "#2563EB",
-      "description": "Road maintenance, snow & ice control, public transit (Codiac Transpo), traffic signals, sidewalks.",
+      "description": "Roads, snow & ice control, sidewalks, traffic signals, parks maintenance, public works, sanitation, and fleet.",
       "subItems": [
-        { "name": "Roads, paving & street maintenance", "amount": 16520000 },
-        { "name": "Codiac Transpo (public transit)", "amount": 14160000 },
-        { "name": "Snow & ice control", "amount": 9440000 },
-        { "name": "Traffic signals & signage", "amount": 3776000 },
-        { "name": "Sidewalks & active transportation", "amount": 3304000 }
+        {
+          "name": "Wages & Benefits",
+          "amount": 12713560
+        },
+        {
+          "name": "Wages Overtime",
+          "amount": 297462
+        },
+        {
+          "name": "Capital from Operating",
+          "amount": 6522000
+        },
+        {
+          "name": "Communication",
+          "amount": 216702
+        },
+        {
+          "name": "Contracts",
+          "amount": 9169024
+        },
+        {
+          "name": "Deposit to Reserves",
+          "amount": 1450000
+        },
+        {
+          "name": "Equipment",
+          "amount": 182837
+        },
+        {
+          "name": "Insurance & Property Taxes",
+          "amount": 758297
+        },
+        {
+          "name": "Maintenance & Repairs",
+          "amount": 1690698
+        },
+        {
+          "name": "Professional Development",
+          "amount": 128372
+        },
+        {
+          "name": "Promotional",
+          "amount": 1237
+        },
+        {
+          "name": "Supplies & Materials",
+          "amount": 2546326
+        },
+        {
+          "name": "Utilities",
+          "amount": 4146381
+        },
+        {
+          "name": "Transfers/Recoveries",
+          "amount": 4735099
+        }
       ]
     },
     {
-      "id": "recreation-cultural",
-      "name": "Recreation & Cultural Services",
-      "amount": 30700000,
-      "prev": 28500000,
-      "color": "#059669",
-      "description": "Parks, arenas, pools, the Avenir Centre, public library, festivals & events, community grants.",
-      "subItems": [
-        { "name": "Parks & open-space maintenance", "amount": 9210000 },
-        { "name": "Arenas, pools & recreation facilities", "amount": 8596000 },
-        { "name": "Avenir Centre operations", "amount": 4605000 },
-        { "name": "Moncton Public Library", "amount": 3684000 },
-        { "name": "Festivals, events & culture", "amount": 2456000 },
-        { "name": "Community grants & partnerships", "amount": 2149000 }
-      ]
-    },
-    {
-      "id": "general-government",
-      "name": "General Government",
-      "amount": 25960000,
-      "prev": 26500000,
-      "color": "#7C3AED",
-      "description": "Mayor & Council, City Manager's office, finance, HR, IT, legal, clerk, communications.",
-      "subItems": [
-        { "name": "Administration & City Manager's office", "amount": 7788000 },
-        { "name": "Finance & treasury", "amount": 5192000 },
-        { "name": "Information technology", "amount": 4674000 },
-        { "name": "Human resources", "amount": 3115000 },
-        { "name": "Legal & clerk", "amount": 2596000 },
-        { "name": "Mayor & Council", "amount": 1558000 },
-        { "name": "Communications & engagement", "amount": 1037000 }
-      ]
-    },
-    {
-      "id": "debt-servicing",
-      "name": "Debt Servicing",
-      "amount": 16520000,
-      "prev": 15800000,
+      "id": "finance-services",
+      "name": "Finance Services",
+      "amount": 40905837,
+      "prev": 42133409,
       "color": "#0891B2",
-      "description": "Interest and principal payments on existing long-term debt used to finance past capital projects (recreation facilities, infrastructure, etc.).",
+      "description": "Finance, treasury, insurance, debt servicing (fiscal cost), capital transfers, and most city-wide fiscal expenses.",
       "subItems": [
-        { "name": "Principal repayments on long-term debt", "amount": 9912000 },
-        { "name": "Interest on long-term debt", "amount": 6608000 }
-      ],
-      "footnote": "Servicing yesterday's borrowed capital — the cost of past infrastructure investments paid off over decades."
+        {
+          "name": "Wages & Benefits",
+          "amount": 6129686
+        },
+        {
+          "name": "Wages Overtime",
+          "amount": 74200
+        },
+        {
+          "name": "Capital from Operating",
+          "amount": 7921676
+        },
+        {
+          "name": "Communication",
+          "amount": 17341
+        },
+        {
+          "name": "Contingencies",
+          "amount": 1354142
+        },
+        {
+          "name": "Contracts",
+          "amount": 370132
+        },
+        {
+          "name": "Deposit to Reserves",
+          "amount": 6390478
+        },
+        {
+          "name": "Equipment",
+          "amount": 97020
+        },
+        {
+          "name": "Fiscal Cost",
+          "amount": 20219139
+        },
+        {
+          "name": "Insurance & Property Taxes",
+          "amount": 964221
+        },
+        {
+          "name": "Maintenance & Repairs",
+          "amount": 1389469
+        },
+        {
+          "name": "Professional Development",
+          "amount": 92223
+        },
+        {
+          "name": "Professional Services - Assessment Costs",
+          "amount": 2833133
+        },
+        {
+          "name": "Professional Services - Other",
+          "amount": 216767
+        },
+        {
+          "name": "Promotional",
+          "amount": 525
+        },
+        {
+          "name": "Supplies & Materials",
+          "amount": 1899959
+        },
+        {
+          "name": "Utilities",
+          "amount": 12856
+        },
+        {
+          "name": "Transfers/Recoveries",
+          "amount": -9077130
+        }
+      ]
     },
     {
-      "id": "capital-transfer",
-      "name": "Transfer to Capital Reserve",
-      "amount": 14160000,
-      "prev": 13200000,
-      "color": "#EA580C",
-      "description": "Operating dollars moved into reserves to pay for future infrastructure: new roads, recreation facilities, equipment, vehicles. The City's primary 'pay-as-you-go' way to fund capital projects without borrowing.",
+      "id": "community-services",
+      "name": "Community Services",
+      "amount": 20814285,
+      "prev": 20553579,
+      "color": "#059669",
+      "description": "Parks programming, arenas, pools, the Coliseum, Magnetic Hill Zoo, Resurgo Place, Moncton Public Library, recreation, and culture.",
       "subItems": [
-        { "name": "General Capital Reserve", "amount": 8496000 },
-        { "name": "Equipment & fleet reserve", "amount": 2832000 },
-        { "name": "Facilities & infrastructure reserve", "amount": 2832000 }
-      ],
-      "footnote": "This is how your property tax helps fund the City's separate $92M annual capital budget. The rest of the capital budget comes from debt, provincial/federal grants, and developer charges."
+        {
+          "name": "Wages & Benefits",
+          "amount": 7501870
+        },
+        {
+          "name": "Wages Overtime",
+          "amount": 41590
+        },
+        {
+          "name": "Communication",
+          "amount": 73808
+        },
+        {
+          "name": "Contracts",
+          "amount": 653223
+        },
+        {
+          "name": "Deposit to Reserves",
+          "amount": 907686
+        },
+        {
+          "name": "Equipment",
+          "amount": 30371
+        },
+        {
+          "name": "Fiscal Cost",
+          "amount": 2159000
+        },
+        {
+          "name": "Grants",
+          "amount": 45000
+        },
+        {
+          "name": "Insurance & Property Taxes",
+          "amount": 698259
+        },
+        {
+          "name": "Maintenance & Repairs",
+          "amount": 889783
+        },
+        {
+          "name": "Professional Development",
+          "amount": 132209
+        },
+        {
+          "name": "Professional Services - Other",
+          "amount": 267332
+        },
+        {
+          "name": "Promotional",
+          "amount": 3569818
+        },
+        {
+          "name": "Supplies & Materials",
+          "amount": 2418888
+        },
+        {
+          "name": "Utilities",
+          "amount": 1002067
+        },
+        {
+          "name": "Transfers/Recoveries",
+          "amount": 423381
+        }
+      ]
     },
     {
-      "id": "environmental-health",
-      "name": "Environmental Health",
-      "amount": 11800000,
-      "prev": 11200000,
+      "id": "codiac-transpo",
+      "name": "Codiac Transpo",
+      "amount": 15927808,
+      "prev": 15833385,
+      "color": "#8B5CF6",
+      "description": "Codiac Transpo public transit — bus operations, fares, maintenance, and routes serving Moncton, Dieppe, and Riverview.",
+      "subItems": [
+        {
+          "name": "Wages & Benefits",
+          "amount": 9334053
+        },
+        {
+          "name": "Wages Overtime",
+          "amount": 207925
+        },
+        {
+          "name": "Communication",
+          "amount": 57845
+        },
+        {
+          "name": "Contracts",
+          "amount": 68420
+        },
+        {
+          "name": "Deposit to Reserves",
+          "amount": 265302
+        },
+        {
+          "name": "Insurance & Property Taxes",
+          "amount": 204939
+        },
+        {
+          "name": "Maintenance & Repairs",
+          "amount": 2249768
+        },
+        {
+          "name": "Professional Development",
+          "amount": 36861
+        },
+        {
+          "name": "Professional Services - Other",
+          "amount": 17310
+        },
+        {
+          "name": "Promotional",
+          "amount": 3651
+        },
+        {
+          "name": "Supplies & Materials",
+          "amount": 3152198
+        },
+        {
+          "name": "Utilities",
+          "amount": 230754
+        },
+        {
+          "name": "Transfers/Recoveries",
+          "amount": 98782
+        }
+      ]
+    },
+    {
+      "id": "grants",
+      "name": "Grants",
+      "amount": 8953571,
+      "prev": 9137622,
       "color": "#65A30D",
-      "description": "Solid waste collection, recycling, street cleaning, environmental services.",
+      "description": "Operating grants the City pays to outside organizations — recreational, cultural, social-service, transportation, and protective grant recipients.",
       "subItems": [
-        { "name": "Solid waste & recycling collection", "amount": 7080000 },
-        { "name": "Street cleaning", "amount": 2360000 },
-        { "name": "Environmental services & stewardship", "amount": 2360000 }
+        {
+          "name": "Capital from Operating",
+          "amount": 44192
+        },
+        {
+          "name": "Communication",
+          "amount": 4200
+        },
+        {
+          "name": "Contracts",
+          "amount": 840817
+        },
+        {
+          "name": "Grants",
+          "amount": 7821080
+        },
+        {
+          "name": "Insurance & Property Taxes",
+          "amount": 19544
+        },
+        {
+          "name": "Maintenance & Repairs",
+          "amount": 11200
+        },
+        {
+          "name": "Supplies & Materials",
+          "amount": 212538
+        }
       ]
     },
     {
-      "id": "environmental-development",
-      "name": "Environmental Development",
-      "amount": 11800000,
-      "prev": 11500000,
+      "id": "sustainable-growth-and-development",
+      "name": "Sustainable Growth and Development Services",
+      "amount": 8761044,
+      "prev": 9827723,
       "color": "#CA8A04",
-      "description": "Urban planning, building inspection, economic development, tourism, downtown revitalization.",
+      "description": "Urban planning, economic development, tourism, building inspection, engineering, and downtown initiatives.",
       "subItems": [
-        { "name": "Planning & development services", "amount": 4720000 },
-        { "name": "Economic development", "amount": 3540000 },
-        { "name": "Tourism & event attraction", "amount": 2360000 },
-        { "name": "Building inspection & permits", "amount": 1180000 }
+        {
+          "name": "Wages & Benefits",
+          "amount": 6337303
+        },
+        {
+          "name": "Wages Overtime",
+          "amount": 8500
+        },
+        {
+          "name": "Communication",
+          "amount": 37821
+        },
+        {
+          "name": "Contracts",
+          "amount": 55000
+        },
+        {
+          "name": "Grants",
+          "amount": 1260481
+        },
+        {
+          "name": "Professional Development",
+          "amount": 203780
+        },
+        {
+          "name": "Professional Services - Other",
+          "amount": 362099
+        },
+        {
+          "name": "Promotional",
+          "amount": 144321
+        },
+        {
+          "name": "Supplies & Materials",
+          "amount": 232102
+        },
+        {
+          "name": "Transfers/Recoveries",
+          "amount": 119637
+        }
       ]
     },
     {
-      "id": "public-health",
-      "name": "Public Health",
-      "amount": 4700000,
-      "prev": 4500000,
-      "color": "#0EA5E9",
-      "description": "Public-health-related expenditures and transfers (e.g. social-housing partnerships, regional health programs).",
+      "id": "corporate-services",
+      "name": "Corporate Services",
+      "amount": 8630571,
+      "prev": 8268327,
+      "color": "#7C3AED",
+      "description": "City-wide corporate functions: communications, customer service, human resources, information systems, and strategic initiatives.",
       "subItems": [
-        { "name": "Regional public-health partnerships", "amount": 2820000 },
-        { "name": "Community housing & social programs", "amount": 1880000 }
+        {
+          "name": "Wages & Benefits",
+          "amount": 7353719
+        },
+        {
+          "name": "Wages Overtime",
+          "amount": 45680
+        },
+        {
+          "name": "Automation Plan",
+          "amount": 137916
+        },
+        {
+          "name": "Communication",
+          "amount": 188493
+        },
+        {
+          "name": "Contracts",
+          "amount": 2176415
+        },
+        {
+          "name": "Equipment",
+          "amount": 6064
+        },
+        {
+          "name": "Maintenance & Repairs",
+          "amount": 25300
+        },
+        {
+          "name": "Professional Development",
+          "amount": 240817
+        },
+        {
+          "name": "Professional Services - Other",
+          "amount": 470478
+        },
+        {
+          "name": "Promotional",
+          "amount": 160986
+        },
+        {
+          "name": "Supplies & Materials",
+          "amount": 230102
+        },
+        {
+          "name": "Transfers/Recoveries",
+          "amount": -2405399
+        }
+      ]
+    },
+    {
+      "id": "legal-and-city-clerk",
+      "name": "Legal and City Clerk Services",
+      "amount": 1431872,
+      "prev": 1395002,
+      "color": "#475569",
+      "description": "City Clerk's office and the City's in-house legal services.",
+      "subItems": [
+        {
+          "name": "Wages & Benefits",
+          "amount": 1455023
+        },
+        {
+          "name": "Wages Overtime",
+          "amount": 5500
+        },
+        {
+          "name": "Communication",
+          "amount": 3606
+        },
+        {
+          "name": "Professional Development",
+          "amount": 65900
+        },
+        {
+          "name": "Professional Services - Other",
+          "amount": 223328
+        },
+        {
+          "name": "Supplies & Materials",
+          "amount": 36482
+        },
+        {
+          "name": "Transfers/Recoveries",
+          "amount": -357967
+        }
+      ]
+    },
+    {
+      "id": "governance-corp-management",
+      "name": "Governance and Corporate Management",
+      "amount": 1332291,
+      "prev": 1307165,
+      "color": "#EA580C",
+      "description": "Mayor and Council, the Chief Administrative Officer's office, and high-level corporate management.",
+      "subItems": [
+        {
+          "name": "Wages & Benefits",
+          "amount": 1292184
+        },
+        {
+          "name": "Communication",
+          "amount": 18508
+        },
+        {
+          "name": "Equipment",
+          "amount": 2310
+        },
+        {
+          "name": "Professional Development",
+          "amount": 180721
+        },
+        {
+          "name": "Professional Services - Other",
+          "amount": 150712
+        },
+        {
+          "name": "Promotional",
+          "amount": 90776
+        },
+        {
+          "name": "Supplies & Materials",
+          "amount": 20694
+        },
+        {
+          "name": "Transfers/Recoveries",
+          "amount": -423614
+        }
       ]
     }
   ]

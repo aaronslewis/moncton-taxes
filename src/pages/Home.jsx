@@ -13,7 +13,7 @@ export default function Home() {
   );
 
   const hasInput = taxPaid > 0;
-  const isPlaceholder = budget.dataStatus === 'placeholder';
+  const showBanner = !!budget.bannerNote;
 
   return (
     <>
@@ -38,14 +38,11 @@ export default function Home() {
 
       <section className="page-section">
         <div className="container">
-          {isPlaceholder && (
+          {showBanner && (
             <div className="notice notice-info mb-6">
               <p>
-                <strong>Heads up:</strong> figures shown are{' '}
-                <strong>placeholder estimates</strong> derived from the November 2025
-                budget news release while line-by-line transcription of the budget PDF is
-                in progress. Top-level totals are reasonable; subcategory splits are not
-                yet exact. See <a href="/methodology">Methodology</a> for details.
+                <strong>Heads up:</strong> {budget.bannerNote}{' '}
+                See <a href="/methodology">Methodology</a> for details.
               </p>
             </div>
           )}
