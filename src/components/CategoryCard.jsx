@@ -62,7 +62,15 @@ export default function CategoryCard({ category, taxPaid }) {
         <div className="subitems" id={`subitems-${category.id}`}>
           {category.subItems && category.subItems.length > 0 && (
             <>
-              <h4>Where this category breaks down</h4>
+              <h4>Spending by expense type</h4>
+              <p className="subitems-note">
+                These are <em>kinds of expense</em>, not sub-functions.{' '}
+                <em>Wages &amp; Benefits</em> and <em>Contracts</em>, for example,
+                cover <strong>all</strong> of the responsibilities listed above &mdash;
+                the City's budget doesn't publish a separate
+                &ldquo;wages for roads vs wages for snow&rdquo; split, just the
+                department total broken down by kind of expense.
+              </p>
               {category.subItems.map((s) => (
                 <div className="subitem" key={s.name}>
                   <span className="subitem-name">{s.name}</span>

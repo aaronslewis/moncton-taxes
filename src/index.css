@@ -783,8 +783,16 @@ input, select, textarea {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--text-muted);
-  margin-bottom: var(--space-3);
+  margin-bottom: var(--space-2);
   font-weight: 700;
+}
+
+.subitems-note {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  line-height: 1.45;
+  margin-bottom: var(--space-4);
+  max-width: 56ch;
 }
 
 .subitem {
