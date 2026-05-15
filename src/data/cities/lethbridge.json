@@ -4,6 +4,8 @@
   "country": "Canada",
   "province": "AB",
   "population": 106550,
+  "populationMetro": 123847,
+  "populationMetroLabel": "CMA",
   "fiscalYear": 2025,
   "currency": "CAD",
   "totalOperating": 295000000,

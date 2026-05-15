@@ -4,6 +4,8 @@
   "country": "Canada",
   "province": "NB",
   "population": 79470,
+  "populationMetro": 157717,
+  "populationMetroLabel": "CMA",
   "fiscalYear": 2026,
   "currency": "CAD",
   "totalOperating": 222471717,

@@ -1572,3 +1572,80 @@ input, select, textarea {
 .context-chip-blue   { background: #DBEAFE; color: #1E40AF; }
 .context-chip-purple { background: #EDE9FE; color: #5B21B6; }
 .context-chip-grey   { background: var(--colour-grey-100); color: var(--colour-grey-700); }
+
+/* ------------------------------------------------------------
+   City stats row — above the comparison matrix
+   ------------------------------------------------------------ */
+.city-stats-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.city-stat-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.city-stat-card-moncton {
+  border-left: 3px solid var(--accent);
+  background: rgba(22, 163, 74, 0.04);
+}
+
+.city-stat-title {
+  font-size: var(--text-base);
+  color: var(--slate);
+  margin: 0;
+  font-family: 'Fraunces Variable', 'Fraunces', Georgia, serif;
+  letter-spacing: -0.01em;
+}
+
+.city-stat-region {
+  font-weight: 500;
+  color: var(--text-muted);
+  font-family: 'Inter Variable', 'Inter', sans-serif;
+  letter-spacing: 0;
+}
+
+.city-stat-list {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.city-stat-row {
+  display: flex;
+  gap: var(--space-2);
+  align-items: baseline;
+  font-size: var(--text-sm);
+}
+
+.city-stat-row dt {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  color: var(--text-muted);
+  min-width: 48px;
+  flex-shrink: 0;
+}
+
+.city-stat-row dd {
+  margin: 0;
+  color: var(--slate);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.city-stat-secondary {
+  color: var(--text-muted);
+  font-weight: 500;
+}

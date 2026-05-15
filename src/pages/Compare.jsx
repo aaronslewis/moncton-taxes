@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 import ComparisonMatrix from '../components/ComparisonMatrix.jsx';
 import CityProvenanceCard from '../components/CityProvenanceCard.jsx';
+import CityStatsRow from '../components/CityStatsRow.jsx';
 import ContextCityCard from '../components/ContextCityCard.jsx';
 import { CITIES } from '../data/cities/index.js';
 import { buildComparisonMatrix } from '../lib/comparison.js';
@@ -59,6 +60,8 @@ export default function Compare() {
             Tap a category row to see which native departments rolled up into it for each
             city.
           </p>
+
+          <CityStatsRow cities={visibleCities} />
 
           <ComparisonMatrix cities={visibleCities} rows={rows} />
         </div>

@@ -4,6 +4,8 @@
   "country": "Canada",
   "province": "BC",
   "population": 99863,
+  "populationMetro": 115459,
+  "populationMetroLabel": "CA",
   "fiscalYear": 2025,
   "currency": "CAD",
   "totalOperating": 214000000,
