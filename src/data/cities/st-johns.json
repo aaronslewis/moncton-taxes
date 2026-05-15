@@ -14,6 +14,8 @@
   "dataStatus": "partial-transcription",
   "hidden": true,
   "hiddenReason": "Provincial policing (RNC) means St. John's municipal budget has near-zero public-safety spend, which distorts the % comparison. Reactivate when the page methodology supports comparing cities with structurally different policing models.",
+  "contextCategory": "different-policing",
+  "contextNote": "In Newfoundland and Labrador, policing is a provincial responsibility — the Royal Newfoundland Constabulary is funded by the province, not the municipality. St. John's also bundles water, sewer, and waste (25% of its budget) into general operating rather than running them as a separate utility. The result is a budget that's hard to compare cleanly as a % allocation.",
   "dataStatusNote": "Verified from the City's 2026 Budget release: total $366.0M, Water + Sewer + Waste 25% ($91.5M), Transportation $82M (incl. Metrobus & paratransit), Fire Department $29M. Important: in Newfoundland and Labrador, policing is a provincial responsibility — municipalities don't fund the Royal Newfoundland Constabulary, so the public-safety bucket reflects fire-only (very different from Moncton's $71M Protective Services). St. John's also bundles water/sewer/waste into general operating, unlike Moncton's separate utility — that's why the water-wastewater bucket is large here and zero for Moncton. Remaining buckets (parks/rec, planning, general government, debt, grants) are proportional estimates pending full transcription from the official 2026 Budget Book PDF.",
   "normalization": { "applied": false },
   "buckets": [

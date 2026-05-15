@@ -10,6 +10,8 @@
   "sourceUrl": "https://www.karlskrona.se/globalassets/kommun-och-politik/mal-ekonomi-och-vision/dokument/budget-2025/karlskrona-kommun-budget-2025.pdf",
   "sourceLabel": "Karlskrona kommun Budget 2025 (full PDF)",
   "lastUpdated": "2026-05-14",
+  "contextCategory": "different-scope",
+  "contextNote": "Swedish kommuner fund K-12 schools, eldercare, and social services that Canadian municipalities don't, and police is a national service. Even with normalization the scope is structurally different — and the official budget PDF isn't extractable from automated tooling.",
   "dataStatusNote": "Karlskrona figures normalized to a Canadian-comparable municipal scope: K-12 education (Kunskapsnämnden ~1.75 Bn SEK), preschool, eldercare (Äldrenämnden), and social services (Socialnämnden) excluded so percentages reflect only services Canadian municipalities also fund. Police is also excluded as it is a national service in Sweden (the only municipal public-safety service is fire/rescue / Räddningstjänsten). Totals and normalized base are approximate pending detailed line-item transcription from the official Swedish budget PDF.",
   "dataStatus": "placeholder",
   "normalization": {

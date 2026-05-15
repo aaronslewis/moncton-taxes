@@ -12,6 +12,8 @@
   "sourceLabel": "City of Saint John 2026 General Fund Operating Budget (Budget Summary page)",
   "lastUpdated": "2026-05-14",
   "dataStatus": "placeholder",
+  "contextCategory": "data-not-available",
+  "contextNote": "The City's 2026 total ($203M) and Saint John Police Force allocation ($32M) are confirmed, but the official PDF with the full service-area breakdown returns 403 to automated tooling — direct browser access is needed to transcribe the rest.",
   "dataStatusNote": "Two figures are confirmed from public sources: the 2026 total ($203M) and the 2026 Saint John Police Force allocation ($32M). The other bucket amounts are proportional estimates pending line-item transcription from the official PDF (the City's budget summary page returns 403 to automated tooling — direct access via browser is needed). For reference, the 2025 approved total was $194,394,563. Replace these placeholders once the 2026 service-area breakdown is in hand.",
   "normalization": { "applied": false },
   "buckets": [
