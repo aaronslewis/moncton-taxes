@@ -1649,3 +1649,9 @@ input, select, textarea {
   color: var(--text-muted);
   font-weight: 500;
 }
+
+.city-stats-legend {
+  margin: calc(-1 * var(--space-4)) 0 var(--space-6);
+  line-height: 1.55;
+  max-width: 64ch;
+}
