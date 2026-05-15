@@ -4,34 +4,38 @@
   "country": "Canada",
   "province": "NB",
   "population": 69895,
+  "populationMetro": 130612,
+  "populationMetroLabel": "CMA",
   "fiscalYear": 2026,
   "currency": "CAD",
-  "totalOperating": 203000000,
-  "totalOperatingNormalized": 203000000,
+  "totalOperating": 205078040,
+  "totalOperatingNormalized": 205078040,
   "sourceUrl": "https://saintjohn.ca/en/city-hall/city-corporation/rates-and-finances/budget-summary",
-  "sourceLabel": "City of Saint John 2026 General Fund Operating Budget (Budget Summary page)",
-  "lastUpdated": "2026-05-14",
-  "dataStatus": "placeholder",
-  "contextCategory": "data-not-available",
-  "contextNote": "The City's 2026 total ($203M) and Saint John Police Force allocation ($32M) are confirmed, but the official PDF with the full service-area breakdown returns 403 to automated tooling — direct browser access is needed to transcribe the rest.",
-  "dataStatusNote": "Two figures are confirmed from public sources: the 2026 total ($203M) and the 2026 Saint John Police Force allocation ($32M). The other bucket amounts are proportional estimates pending line-item transcription from the official PDF (the City's budget summary page returns 403 to automated tooling — direct access via browser is needed). For reference, the 2025 approved total was $194,394,563. Replace these placeholders once the 2026 service-area breakdown is in hand.",
+  "sourceLabel": "City of Saint John 2026 General Fund Operating Budget (Approved)",
+  "lastUpdated": "2026-05-15",
+  "dataStatus": "transcribed-official",
+  "dataStatusNote": "Transcribed from the City of Saint John 2026 General Fund Operating Budget (Approved). The City publishes 8 service-area totals; some of those (Growth & Community Services, Public Works & Transportation Services) bundle planning + recreation + parks together, so they're split here based on line-item detail in the budget book.",
   "normalization": { "applied": false },
   "buckets": [
     {
       "taxonomyId": "public-safety",
-      "amount": 60000000,
-      "share": 0.2956,
+      "amount": 66286660,
+      "share": 0.3232,
       "nativeDepartments": [
-        { "name": "Saint John Police Force (~$32M, confirmed)", "amount": 32000000 },
-        { "name": "Saint John Fire Department (estimated)", "amount": 28000000 }
+        { "name": "Public Safety Services — Saint John Police Commission (own municipal force)", "amount": 31999266 },
+        { "name": "Public Safety Services — Fire, EMO and PSCC (incl. Street Lighting, Water Supply & Hydrants)", "amount": 34287394 }
       ]
     },
     {
       "taxonomyId": "transportation",
-      "amount": 45000000,
-      "share": 0.2217,
+      "amount": 37222000,
+      "share": 0.1815,
       "nativeDepartments": [
-        { "name": "Transportation & Public Works incl. transit (estimated)", "amount": 45000000 }
+        { "name": "Roads, snow, sidewalks, surface maintenance, pedestrian/traffic (portion of Public Works & Transportation Services)", "amount": 20444000 },
+        { "name": "Saint John Transit (Transit Debt + Transit Subsidy)", "amount": 8984000 },
+        { "name": "Solid Waste Management", "amount": 2552000 },
+        { "name": "Stormwater", "amount": 4236000 },
+        { "name": "Fleet Stockroom + Parking (Admin, Peel Plaza, Market Square, Off Street)", "amount": 1006000 }
       ]
     },
     {
@@ -39,47 +43,59 @@
       "amount": 0,
       "share": 0,
       "nativeDepartments": [
-        { "name": "Funded by the separate Saint John Water Utility Fund (paid on water bill, not property tax)", "amount": 0 }
+        { "name": "Funded by the separate Saint John Water Utility Fund (paid on the water bill, not property tax)", "amount": 0 }
       ]
     },
     {
       "taxonomyId": "parks-recreation-culture",
-      "amount": 24000000,
-      "share": 0.1182,
+      "amount": 26120000,
+      "share": 0.1274,
       "nativeDepartments": [
-        { "name": "Recreation, Parks & Cultural Services (estimated)", "amount": 24000000 }
+        { "name": "Landscape — Parks & Open Spaces + Rockwood Park + Urban Forestry + SJ Horticultural Assoc. (from Public Works & Transportation)", "amount": 11283000 },
+        { "name": "Arena, Sportsfield, Other Facilities Operation & Maintenance (from Public Works & Transportation)", "amount": 3437000 },
+        { "name": "Library, City Market, Aquatic Centre, Arts Centre, Imperial Theatre, TD Station, Lord Beaverbrook Rink (from Growth & Community)", "amount": 2396000 },
+        { "name": "Market Square + Saint John Trade & Convention Centre", "amount": 5588000 },
+        { "name": "Community Centers, Recreation Programming, Lifeguards, Play SJ, PRO Kids, Arts & Culture Board (from Growth & Community)", "amount": 1923000 },
+        { "name": "Contracted services to YMCA + Boys and Girls Club", "amount": 1493000 }
       ]
     },
     {
       "taxonomyId": "planning-growth",
-      "amount": 8000000,
-      "share": 0.0394,
+      "amount": 13400000,
+      "share": 0.0654,
       "nativeDepartments": [
-        { "name": "Growth & Community Planning (estimated)", "amount": 8000000 }
+        { "name": "Growth & Community Planning Services", "amount": 1668000 },
+        { "name": "Development Engineering, Permitting & Inspection, Minimum Property Standards, Dangerous and Vacant Building, Heritage Conservation", "amount": 2916000 },
+        { "name": "Growth Department + Saint John Industrial Parks", "amount": 5381000 },
+        { "name": "Regional Economic Development Agency", "amount": 1611000 },
+        { "name": "Housing — Affordable Housing Strategy + Housing Accelerator Program + Housing For All", "amount": 1160000 },
+        { "name": "Animal Control + Community Development + Neighbourhood Development", "amount": 664000 }
       ]
     },
     {
       "taxonomyId": "general-government",
-      "amount": 19000000,
-      "share": 0.0936,
+      "amount": 25781232,
+      "share": 0.1257,
       "nativeDepartments": [
-        { "name": "Corporate Services, City Manager, HR, IT, Legal (estimated)", "amount": 19000000 }
+        { "name": "Corporate Services — CAO, Mayor's Office, Common Council, Common Clerk, HR, Legal, Real Estate, Customer Service, Corporate Communications", "amount": 9314019 },
+        { "name": "Strategic Services — Finance, Assessment, Supply Chain, IT, Corporate Planning, Insurance, Liability Insurance", "amount": 10217339 },
+        { "name": "Utilities & Infrastructure Services — Engineering, Facilities Mgmt, City Hall Building, GIS, Stockroom, Carpenter Shop", "amount": 6249874 }
       ]
     },
     {
       "taxonomyId": "debt-fiscal",
-      "amount": 37000000,
-      "share": 0.1823,
+      "amount": 33618593,
+      "share": 0.1639,
       "nativeDepartments": [
-        { "name": "Fiscal Services / debt servicing / capital from operating (estimated)", "amount": 37000000 }
+        { "name": "Other Charges — Fiscal Charges, Landfill Closure, Special Pension Contributions, PILT Adjustment, Transfer to Capital Reserves, Capital from Operating", "amount": 33618593 }
       ]
     },
     {
       "taxonomyId": "other-grants",
-      "amount": 10000000,
-      "share": 0.0493,
+      "amount": 2649555,
+      "share": 0.0129,
       "nativeDepartments": [
-        { "name": "Grants to outside agencies, contingency (estimated)", "amount": 10000000 }
+        { "name": "Regional Services Commission + Unspecified Grants + Local Immigration Partnership + Building Incentive Reserve (residual)", "amount": 2649555 }
       ]
     }
   ]
