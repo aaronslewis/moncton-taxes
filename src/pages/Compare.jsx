@@ -6,7 +6,7 @@ import { buildComparisonMatrix } from '../lib/comparison.js';
 
 export default function Compare() {
   const visibleCities = useMemo(
-    () => CITIES.filter((c) => c.dataStatus !== 'placeholder'),
+    () => CITIES.filter((c) => c.dataStatus !== 'placeholder' && !c.hidden),
     []
   );
   const { rows } = useMemo(() => buildComparisonMatrix(visibleCities), [visibleCities]);

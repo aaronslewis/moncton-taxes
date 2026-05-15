@@ -11,6 +11,8 @@
   "sourceLabel": "Esbjerg Kommune Budget 2025-2028 (agreed 2024-09-13)",
   "lastUpdated": "2026-05-14",
   "dataStatus": "partial-transcription",
+  "hidden": true,
+  "hiddenReason": "Danish kommunes don't fund policing (national service) and don't fund the same scope as Canadian municipalities even after normalization, so the % comparison is structurally noisy. Reactivate when the page methodology supports cross-system comparison.",
   "dataStatusNote": "Verified from Esbjerg Kommune's Budget 2025-2028 agreement: total kommune budget 9.7 billion DKK; new school masterplan investment 105 mio. DKK over 2025-28; adult social area strengthened by +40 mio. DKK/year. Like Karlskrona, Danish kommuner fund services Canadian municipalities don't: K-12 schools (Skoler), preschool/daycare (Dagtilbud), eldercare (Ældreomsorg), social services and unemployment transfers (Social & Arbejdsmarked). Those are excluded so percentages reflect a Canadian-comparable scope (~2.23 billion DKK). Police is national in Denmark, so public-safety is fire/rescue (Beredskab) only — typically a tiny share. Per-bucket amounts within the normalized scope are proportional estimates pending line-item transcription from the official kommune budget PDF.",
   "normalization": {
     "applied": true,

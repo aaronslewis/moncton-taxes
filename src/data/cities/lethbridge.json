@@ -1,0 +1,85 @@
+{
+  "cityId": "lethbridge",
+  "displayName": "Lethbridge",
+  "country": "Canada",
+  "province": "AB",
+  "population": 106550,
+  "fiscalYear": 2025,
+  "currency": "CAD",
+  "totalOperating": 295000000,
+  "totalOperatingNormalized": 295000000,
+  "sourceUrl": "https://www.lethbridge.ca/council-administration-governance/budget-and-finances/operating-budget/",
+  "sourceLabel": "City of Lethbridge 2023-2026 Four-Year Operating Budget (adopted Nov 29, 2022)",
+  "lastUpdated": "2026-05-15",
+  "dataStatus": "partial-transcription",
+  "dataStatusNote": "Verified from the 2023-2026 Operating Budget: 2022 General Fund baseline $254M, with annual tax rate increases of ~5.1% — 2025 General Fund estimated at ~$295M. Lethbridge Police Service incremental funding through the four-year cycle: +$2.24M (2023), +$4.08M (2024), +$4.95M (2025), +$4.96M (2026) on top of baseline. Lethbridge runs its own municipal police service (unlike RCMP-contracted Moncton/Nanaimo) and also operates its own electric, water, and wastewater utilities — those are in the separate Utility Fund and excluded here. Per-bucket amounts in the General Fund are proportional estimates pending line-item transcription from the official 2023-2026 Operating Budget PDF.",
+  "normalization": { "applied": false },
+  "buckets": [
+    {
+      "taxonomyId": "public-safety",
+      "amount": 70000000,
+      "share": 0.2373,
+      "nativeDepartments": [
+        { "name": "Lethbridge Police Service (own municipal force — estimated ~$42M)", "amount": 42000000 },
+        { "name": "Lethbridge Fire and Emergency Services (integrated Fire + EMS — estimated ~$28M)", "amount": 28000000 }
+      ]
+    },
+    {
+      "taxonomyId": "transportation",
+      "amount": 65000000,
+      "share": 0.2203,
+      "nativeDepartments": [
+        { "name": "Public Operations — roads, snow, fleet (estimated)", "amount": 50000000 },
+        { "name": "Lethbridge Transit (estimated)", "amount": 15000000 }
+      ]
+    },
+    {
+      "taxonomyId": "water-wastewater",
+      "amount": 0,
+      "share": 0,
+      "nativeDepartments": [
+        { "name": "Funded by the City's separate Utility Fund (water, wastewater, and electric run as municipal utilities — paid on utility bills, not property tax)", "amount": 0 }
+      ]
+    },
+    {
+      "taxonomyId": "parks-recreation-culture",
+      "amount": 38000000,
+      "share": 0.1288,
+      "nativeDepartments": [
+        { "name": "Parks, Recreation & Culture (estimated)", "amount": 38000000 }
+      ]
+    },
+    {
+      "taxonomyId": "planning-growth",
+      "amount": 12000000,
+      "share": 0.0407,
+      "nativeDepartments": [
+        { "name": "Planning & Development Services, Economic Development (estimated)", "amount": 12000000 }
+      ]
+    },
+    {
+      "taxonomyId": "general-government",
+      "amount": 24000000,
+      "share": 0.0814,
+      "nativeDepartments": [
+        { "name": "Corporate Administration — Finance, HR, IT, Legal, Communications, Council (estimated)", "amount": 24000000 }
+      ]
+    },
+    {
+      "taxonomyId": "debt-fiscal",
+      "amount": 53000000,
+      "share": 0.1797,
+      "nativeDepartments": [
+        { "name": "Fiscal Services — debt servicing, capital from operating, reserves (estimated)", "amount": 53000000 }
+      ]
+    },
+    {
+      "taxonomyId": "other-grants",
+      "amount": 33000000,
+      "share": 0.1119,
+      "nativeDepartments": [
+        { "name": "Lethbridge Public Library Board operating grant + other community grants and contingency (estimated)", "amount": 33000000 }
+      ]
+    }
+  ]
+}
