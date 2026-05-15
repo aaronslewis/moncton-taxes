@@ -1,0 +1,93 @@
+{
+  "cityId": "nanaimo",
+  "displayName": "Nanaimo",
+  "country": "Canada",
+  "province": "BC",
+  "population": 99863,
+  "populationMetro": 115459,
+  "populationMetroLabel": "CA",
+  "fiscalYear": 2025,
+  "currency": "CAD",
+  "taxRate": 3.91081,
+  "taxRateBase": 1000,
+  "taxRateLabel": "Class 1 residential",
+  "taxRateNote": "Municipal portion only (the total tax bill also includes school, regional district, library, and BC Assessment levies). BC publishes rates as mills (per $1,000) rather than per $100.",
+  "typicalHomeValue": 770000,
+  "typicalHomeValueNote": "Back-computed from the City's confirmation that a typical single-family home pays just over $3,000 in 2025 municipal tax at the 3.91 mill rate. BC home values are roughly 2-3x NB equivalents.",
+  "totalOperating": 214000000,
+  "totalOperatingNormalized": 214000000,
+  "sourceUrl": "https://www.nanaimo.ca/your-government/budget-finance/budget-information",
+  "sourceLabel": "City of Nanaimo 2025-2029 Financial Plan (adopted May 2025)",
+  "lastUpdated": "2026-05-15",
+  "dataStatus": "partial-transcription",
+  "dataStatusNote": "Verified from the City of Nanaimo's 2025-2029 Financial Plan: operating budget $214M (a $13M increase over 2024), 168 RCMP members under contract (with 4 new members added in 2025), 20 new firefighters January 1, 2025 supporting the Fire Master Plan, plus 6 new Community Safety Officers. Nanaimo contracts the RCMP for policing — same model as Moncton (Codiac RCMP), so the public-safety bucket is directly comparable. Water and sewer run as a separate user-fee utility (not in general operating). Per-bucket amounts are proportional estimates pending line-item transcription from the official Financial Plan PDF.",
+  "normalization": { "applied": false },
+  "buckets": [
+    {
+      "taxonomyId": "public-safety",
+      "amount": 68000000,
+      "share": 0.3178,
+      "nativeDepartments": [
+        { "name": "RCMP contract — 168 members (estimated ~$36M based on contract size)", "amount": 36000000 },
+        { "name": "Nanaimo Fire Rescue (estimated ~$30M, expanded by 20 firefighters in 2025)", "amount": 30000000 },
+        { "name": "Bylaw, Community Safety Officers, emergency preparedness (estimated)", "amount": 2000000 }
+      ]
+    },
+    {
+      "taxonomyId": "transportation",
+      "amount": 50000000,
+      "share": 0.2336,
+      "nativeDepartments": [
+        { "name": "Public Works, Engineering, transit operations (estimated)", "amount": 50000000 }
+      ]
+    },
+    {
+      "taxonomyId": "water-wastewater",
+      "amount": 0,
+      "share": 0,
+      "nativeDepartments": [
+        { "name": "Funded as a separate user-fee utility (water + sewer + sanitation revenues, paid on the utility bill, not property tax)", "amount": 0 }
+      ]
+    },
+    {
+      "taxonomyId": "parks-recreation-culture",
+      "amount": 28000000,
+      "share": 0.1308,
+      "nativeDepartments": [
+        { "name": "Parks, Recreation & Culture (estimated)", "amount": 28000000 }
+      ]
+    },
+    {
+      "taxonomyId": "planning-growth",
+      "amount": 8000000,
+      "share": 0.0374,
+      "nativeDepartments": [
+        { "name": "Planning & Development (estimated)", "amount": 8000000 }
+      ]
+    },
+    {
+      "taxonomyId": "general-government",
+      "amount": 17000000,
+      "share": 0.0794,
+      "nativeDepartments": [
+        { "name": "Corporate Services — HR, IT, Legal, Communications, Clerk, Council (estimated)", "amount": 17000000 }
+      ]
+    },
+    {
+      "taxonomyId": "debt-fiscal",
+      "amount": 35000000,
+      "share": 0.1636,
+      "nativeDepartments": [
+        { "name": "Fiscal Services — debt servicing, capital from operating, reserve contributions (estimated)", "amount": 35000000 }
+      ]
+    },
+    {
+      "taxonomyId": "other-grants",
+      "amount": 8000000,
+      "share": 0.0374,
+      "nativeDepartments": [
+        { "name": "Grants to outside organizations, contingency, other (estimated)", "amount": 8000000 }
+      ]
+    }
+  ]
+}

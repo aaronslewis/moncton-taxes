@@ -1,17 +1,25 @@
 import { useMemo } from 'react';
 import ComparisonMatrix from '../components/ComparisonMatrix.jsx';
 import CityProvenanceCard from '../components/CityProvenanceCard.jsx';
+import CityStatsRow from '../components/CityStatsRow.jsx';
+import ContextCityCard from '../components/ContextCityCard.jsx';
+import ObservationsGrid from '../components/ObservationsGrid.jsx';
 import { CITIES } from '../data/cities/index.js';
 import { buildComparisonMatrix } from '../lib/comparison.js';
+import { computeCompareObservations } from '../lib/compareObservations.js';
 
 export default function Compare() {
   const visibleCities = useMemo(
-    () => CITIES.filter((c) => c.dataStatus !== 'placeholder'),
+    () => CITIES.filter((c) => c.dataStatus !== 'placeholder' && !c.hidden),
+    []
+  );
+  const contextCities = useMemo(
+    () => CITIES.filter((c) => c.dataStatus === 'placeholder' || c.hidden),
     []
   );
   const { rows } = useMemo(() => buildComparisonMatrix(visibleCities), [visibleCities]);
+  const observations = useMemo(() => computeCompareObservations(CITIES), []);
   const normalizedCities = visibleCities.filter((c) => c.normalization?.applied);
-  const hiddenCount = CITIES.length - visibleCities.length;
 
   return (
     <>
@@ -20,8 +28,9 @@ export default function Compare() {
           <h1>How does <span className="accent">Moncton compare?</span></h1>
           <p>
             Every municipality publishes its budget a little differently. Below, Moncton
-            sits next to five peer cities — each city's spending rolled up into eight
-            shared categories so the percentages line up.
+            sits next to {visibleCities.length - 1} peer{visibleCities.length - 1 === 1 ? '' : 's'}{' '}
+            — each city's spending rolled up into eight shared categories so the
+            percentages line up.
           </p>
         </div>
       </header>
@@ -55,11 +64,29 @@ export default function Compare() {
             city.
           </p>
 
+          <CityStatsRow cities={visibleCities} />
+
           <ComparisonMatrix cities={visibleCities} rows={rows} />
         </div>
       </section>
 
-      <section className="page-section page-section-tinted">
+      {observations.length > 0 && (
+        <section className="page-section page-section-tinted">
+          <div className="container">
+            <div className="section-heading">
+              <h2>What stands out</h2>
+              <div className="section-divider" />
+            </div>
+            <p className="section-lede">
+              A few patterns the numbers above surface — computed directly from each city's
+              transcribed budget, not hand-picked.
+            </p>
+            <ObservationsGrid observations={observations} />
+          </div>
+        </section>
+      )}
+
+      <section className="page-section">
         <div className="container">
           <div className="section-heading">
             <h2>Where the numbers come from</h2>
@@ -76,15 +103,31 @@ export default function Compare() {
               <CityProvenanceCard key={city.cityId} city={city} />
             ))}
           </div>
-
-          {hiddenCount > 0 && (
-            <p className="text-muted text-sm mt-6">
-              {hiddenCount} additional {hiddenCount === 1 ? 'city is' : 'cities are'} drafted but
-              hidden until their line-item budgets can be transcribed from the official sources.
-            </p>
-          )}
         </div>
       </section>
+
+      {contextCities.length > 0 && (
+        <section className="page-section page-section-tinted">
+          <div className="container">
+            <div className="section-heading">
+              <h2>Cities we looked at but couldn't directly compare</h2>
+              <div className="section-divider" />
+            </div>
+            <p className="section-lede">
+              These are worth knowing about even though they don't fit cleanly into the
+              percentage comparison above — either their municipal scope is structurally
+              different (e.g. policing handled at a higher level of government), or their
+              detailed budget breakdowns aren't publicly accessible.
+            </p>
+
+            <div className="context-grid">
+              {contextCities.map((city) => (
+                <ContextCityCard key={city.cityId} city={city} />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
     </>
   );
 }

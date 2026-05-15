@@ -12,6 +12,8 @@
   "sourceLabel": "Town of Salisbury 2025 General Operating Budget (Council approval announcement)",
   "lastUpdated": "2026-05-14",
   "dataStatus": "placeholder",
+  "contextCategory": "data-not-available",
+  "contextNote": "A village of ~2,700 — the Town publishes its $7.88M total but not a department-level breakdown the way larger cities do. Worth noting as the smallest scale of NB municipal government.",
   "dataStatusNote": "Total ($7.88M) is confirmed from the Town's December 2024 council announcement; the bucket breakdown is a proportional estimate typical of small NB villages (heavy RCMP contract share, no own police, no transit). The Town did not publish a department-level breakdown in the public announcement. Wastewater is a separate $496K utility fund.",
   "normalization": { "applied": false },
   "buckets": [

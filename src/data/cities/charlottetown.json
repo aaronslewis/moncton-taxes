@@ -12,6 +12,8 @@
   "sourceLabel": "City of Charlottetown 2025-26 Operating Budget (Annual Budget page)",
   "lastUpdated": "2026-05-14",
   "dataStatus": "placeholder",
+  "contextCategory": "data-not-available",
+  "contextNote": "Total ($110M for 2025-26) and combined Police + Fire ($22.4M) are confirmed from the City's announcement, but the full department-level breakdown isn't published in publicly accessible summaries.",
   "dataStatusNote": "Total ($110M for City Corporation + Water and Sewer Utility) and combined Police+Fire ($22.4M) are confirmed from the City's announcement; remaining bucket allocations are proportional estimates pending line-item transcription. The Water and Sewer Utility (a separately-funded portion of the $110M) is included for completeness — uncertainty here is meaningful and should be resolved with the official budget book.",
   "normalization": { "applied": false },
   "buckets": [

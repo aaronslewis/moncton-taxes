@@ -12,6 +12,8 @@
   "sourceLabel": "Lafayette Consolidated Government FY 2025-2026 Adopted Operating Budget",
   "lastUpdated": "2026-05-14",
   "dataStatus": "placeholder",
+  "contextCategory": "different-scope",
+  "contextNote": "Lafayette runs as a consolidated city-parish government with its own publicly-owned utility (LUS — electric, water, sewer, telecom). The $803.7M total spans services Canadian municipalities don't deliver; the city general-fund subset (~$260M) would compare more cleanly but the line-item PDF is too large to extract via automated tooling.",
   "dataStatusNote": "Lafayette is governed by the Lafayette Consolidated Government (LCG) — a unified city-parish structure with no Canadian equivalent. The full LCG operating budget for FY2025-26 is $803.7M, but that includes parish-wide funds (sheriff, courts, parish library, drainage districts), the Lafayette Utilities System (LUS — electric/water/sewer/telecom), and special revenue funds that fall outside Canadian municipal scope. Normalized total ($260M, est.) reflects the City of Lafayette General Fund only — police, fire, public works, parks/rec, planning, general government, debt — for like-for-like comparison. Confirmed within the normalized scope: police + fire combined ≈ $81M; road and bridge investment ≈ $31M+. The remaining buckets are proportional estimates pending line-item transcription from the official 2025-2026 Adopted Budget Book PDF.",
   "normalization": {
     "applied": true,
