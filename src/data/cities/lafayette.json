@@ -1,0 +1,91 @@
+{
+  "cityId": "lafayette",
+  "displayName": "Lafayette",
+  "country": "USA",
+  "province": "LA",
+  "population": 121374,
+  "fiscalYear": 2026,
+  "currency": "USD",
+  "totalOperating": 803700000,
+  "totalOperatingNormalized": 260000000,
+  "sourceUrl": "https://www.lafayettela.gov/finance-management/lcg-budget-documents/default",
+  "sourceLabel": "Lafayette Consolidated Government FY 2025-2026 Adopted Operating Budget",
+  "lastUpdated": "2026-05-14",
+  "dataStatus": "placeholder",
+  "dataStatusNote": "Lafayette is governed by the Lafayette Consolidated Government (LCG) — a unified city-parish structure with no Canadian equivalent. The full LCG operating budget for FY2025-26 is $803.7M, but that includes parish-wide funds (sheriff, courts, parish library, drainage districts), the Lafayette Utilities System (LUS — electric/water/sewer/telecom), and special revenue funds that fall outside Canadian municipal scope. Normalized total ($260M, est.) reflects the City of Lafayette General Fund only — police, fire, public works, parks/rec, planning, general government, debt — for like-for-like comparison. Confirmed within the normalized scope: police + fire combined ≈ $81M; road and bridge investment ≈ $31M+. The remaining buckets are proportional estimates pending line-item transcription from the official 2025-2026 Adopted Budget Book PDF.",
+  "normalization": {
+    "applied": true,
+    "excludedCategories": [
+      { "name": "Lafayette Utilities System (LUS — electric, water, sewer, telecom)", "amount": 350000000 },
+      { "name": "Parish-wide funds (sheriff, courts, parish library, registrar, jail)", "amount": 120000000 },
+      { "name": "Drainage districts, special revenue funds, capital projects (non-operating)", "amount": 73700000 }
+    ],
+    "note": "Excluded so percentages reflect a Canadian-comparable municipal scope. The 'totalOperating' field shows the un-normalized LCG total ($803.7M) for transparency; bucket shares are computed against 'totalOperatingNormalized' (the City of Lafayette General Fund, ~$260M est.). Excluded-category amounts are approximate and should be refined from the official budget book."
+  },
+  "buckets": [
+    {
+      "taxonomyId": "public-safety",
+      "amount": 81000000,
+      "share": 0.3115,
+      "nativeDepartments": [
+        { "name": "Lafayette Police Department + Lafayette Fire Department (combined ≈ $81M, confirmed)", "amount": 81000000 }
+      ]
+    },
+    {
+      "taxonomyId": "transportation",
+      "amount": 45000000,
+      "share": 0.1731,
+      "nativeDepartments": [
+        { "name": "Public Works (roads, streets, traffic) — $31M+ in road/bridge investment confirmed; total estimated", "amount": 45000000 }
+      ]
+    },
+    {
+      "taxonomyId": "water-wastewater",
+      "amount": 0,
+      "share": 0,
+      "nativeDepartments": [
+        { "name": "Funded by Lafayette Utilities System (LUS) — separate utility revenue, excluded from the general fund comparison", "amount": 0 }
+      ]
+    },
+    {
+      "taxonomyId": "parks-recreation-culture",
+      "amount": 32000000,
+      "share": 0.1231,
+      "nativeDepartments": [
+        { "name": "Parks, Arts, Recreation & Culture (PARC) (estimated)", "amount": 32000000 }
+      ]
+    },
+    {
+      "taxonomyId": "planning-growth",
+      "amount": 12000000,
+      "share": 0.0462,
+      "nativeDepartments": [
+        { "name": "Planning, Zoning & Development (estimated)", "amount": 12000000 }
+      ]
+    },
+    {
+      "taxonomyId": "general-government",
+      "amount": 40000000,
+      "share": 0.1538,
+      "nativeDepartments": [
+        { "name": "Mayor-President's office, Administration, HR, IT, Legal, Clerk (estimated)", "amount": 40000000 }
+      ]
+    },
+    {
+      "taxonomyId": "debt-fiscal",
+      "amount": 38000000,
+      "share": 0.1462,
+      "nativeDepartments": [
+        { "name": "Debt service, capital from operating, reserves (estimated)", "amount": 38000000 }
+      ]
+    },
+    {
+      "taxonomyId": "other-grants",
+      "amount": 12000000,
+      "share": 0.0462,
+      "nativeDepartments": [
+        { "name": "Grants to outside agencies, contingency, drainage (within general fund) (estimated)", "amount": 12000000 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "cityId": "st-johns",
+  "displayName": "St. John's",
+  "country": "Canada",
+  "province": "NL",
+  "population": 110525,
+  "fiscalYear": 2026,
+  "currency": "CAD",
+  "totalOperating": 365997790,
+  "totalOperatingNormalized": 365997790,
+  "sourceUrl": "https://www.stjohns.ca/en/news/city-of-st-john-s-releases-budget-2026.aspx",
+  "sourceLabel": "City of St. John's 2026 Budget release (Council approval Dec 15, 2025)",
+  "lastUpdated": "2026-05-14",
+  "dataStatus": "partial-transcription",
+  "dataStatusNote": "Verified from the City's 2026 Budget release: total $366.0M, Water + Sewer + Waste 25% ($91.5M), Transportation $82M (incl. Metrobus & paratransit), Fire Department $29M. Important: in Newfoundland and Labrador, policing is a provincial responsibility — municipalities don't fund the Royal Newfoundland Constabulary, so the public-safety bucket reflects fire-only (very different from Moncton's $71M Protective Services). St. John's also bundles water/sewer/waste into general operating, unlike Moncton's separate utility — that's why the water-wastewater bucket is large here and zero for Moncton. Remaining buckets (parks/rec, planning, general government, debt, grants) are proportional estimates pending full transcription from the official 2026 Budget Book PDF.",
+  "normalization": { "applied": false },
+  "buckets": [
+    {
+      "taxonomyId": "public-safety",
+      "amount": 29000000,
+      "share": 0.0792,
+      "nativeDepartments": [
+        { "name": "St. John's Regional Fire Department (~$29M, confirmed)", "amount": 29000000 },
+        { "name": "Policing is a provincial responsibility in NL (Royal Newfoundland Constabulary) — not in the municipal budget", "amount": 0 }
+      ]
+    },
+    {
+      "taxonomyId": "transportation",
+      "amount": 82000000,
+      "share": 0.2240,
+      "nativeDepartments": [
+        { "name": "Transportation Services — roads, snow ($5.3M equipment replacement confirmed), traffic, sidewalks (confirmed $82M)", "amount": 77000000 },
+        { "name": "Metrobus / paratransit operating grant (+$1M increase confirmed)", "amount": 5000000 }
+      ]
+    },
+    {
+      "taxonomyId": "water-wastewater",
+      "amount": 91499448,
+      "share": 0.2500,
+      "nativeDepartments": [
+        { "name": "Water, Sewer & Waste — bundled as the city's single largest investment (~25% of budget, confirmed)", "amount": 91499448 },
+        { "name": "Note: includes solid-waste collection in addition to water/sewer infrastructure", "amount": 0 }
+      ]
+    },
+    {
+      "taxonomyId": "parks-recreation-culture",
+      "amount": 33000000,
+      "share": 0.0902,
+      "nativeDepartments": [
+        { "name": "Recreation, Parks, Culture (estimated)", "amount": 33000000 }
+      ]
+    },
+    {
+      "taxonomyId": "planning-growth",
+      "amount": 11000000,
+      "share": 0.0301,
+      "nativeDepartments": [
+        { "name": "Planning, Engineering & Regulatory Services (estimated)", "amount": 11000000 }
+      ]
+    },
+    {
+      "taxonomyId": "general-government",
+      "amount": 25600000,
+      "share": 0.0699,
+      "nativeDepartments": [
+        { "name": "Corporate Services, Council, City Manager, Legal, IT, HR (estimated)", "amount": 25600000 }
+      ]
+    },
+    {
+      "taxonomyId": "debt-fiscal",
+      "amount": 65900000,
+      "share": 0.1801,
+      "nativeDepartments": [
+        { "name": "Fiscal Services — debt servicing, capital from operating, reserves; capital projects $22M confirmed (estimated total)", "amount": 65900000 }
+      ]
+    },
+    {
+      "taxonomyId": "other-grants",
+      "amount": 28000000,
+      "share": 0.0765,
+      "nativeDepartments": [
+        { "name": "Grants (incl. St. John's Sports and Entertainment, community partnerships) (estimated)", "amount": 28000000 }
+      ]
+    }
+  ]
+}
