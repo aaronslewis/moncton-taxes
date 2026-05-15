@@ -3,8 +3,10 @@ import ComparisonMatrix from '../components/ComparisonMatrix.jsx';
 import CityProvenanceCard from '../components/CityProvenanceCard.jsx';
 import CityStatsRow from '../components/CityStatsRow.jsx';
 import ContextCityCard from '../components/ContextCityCard.jsx';
+import ObservationsGrid from '../components/ObservationsGrid.jsx';
 import { CITIES } from '../data/cities/index.js';
 import { buildComparisonMatrix } from '../lib/comparison.js';
+import { computeCompareObservations } from '../lib/compareObservations.js';
 
 export default function Compare() {
   const visibleCities = useMemo(
@@ -16,6 +18,7 @@ export default function Compare() {
     []
   );
   const { rows } = useMemo(() => buildComparisonMatrix(visibleCities), [visibleCities]);
+  const observations = useMemo(() => computeCompareObservations(CITIES), []);
   const normalizedCities = visibleCities.filter((c) => c.normalization?.applied);
 
   return (
@@ -67,7 +70,23 @@ export default function Compare() {
         </div>
       </section>
 
-      <section className="page-section page-section-tinted">
+      {observations.length > 0 && (
+        <section className="page-section page-section-tinted">
+          <div className="container">
+            <div className="section-heading">
+              <h2>What stands out</h2>
+              <div className="section-divider" />
+            </div>
+            <p className="section-lede">
+              A few patterns the numbers above surface — computed directly from each city's
+              transcribed budget, not hand-picked.
+            </p>
+            <ObservationsGrid observations={observations} />
+          </div>
+        </section>
+      )}
+
+      <section className="page-section">
         <div className="container">
           <div className="section-heading">
             <h2>Where the numbers come from</h2>
@@ -88,7 +107,7 @@ export default function Compare() {
       </section>
 
       {contextCities.length > 0 && (
-        <section className="page-section">
+        <section className="page-section page-section-tinted">
           <div className="container">
             <div className="section-heading">
               <h2>Cities we looked at but couldn't directly compare</h2>
