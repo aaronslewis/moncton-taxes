@@ -1,0 +1,93 @@
+{
+  "cityId": "karlskrona",
+  "displayName": "Karlskrona",
+  "country": "Sweden",
+  "population": 67359,
+  "fiscalYear": 2025,
+  "currency": "SEK",
+  "totalOperating": 3500000000,
+  "totalOperatingNormalized": 945000000,
+  "sourceUrl": "https://www.karlskrona.se/globalassets/kommun-och-politik/mal-ekonomi-och-vision/dokument/budget-2025/karlskrona-kommun-budget-2025.pdf",
+  "sourceLabel": "Karlskrona kommun Budget 2025 (full PDF)",
+  "lastUpdated": "2026-05-14",
+  "dataStatusNote": "Karlskrona figures normalized to a Canadian-comparable municipal scope: K-12 education (Kunskapsnämnden ~1.75 Bn SEK), preschool, eldercare (Äldrenämnden), and social services (Socialnämnden) excluded so percentages reflect only services Canadian municipalities also fund. Police is also excluded as it is a national service in Sweden (the only municipal public-safety service is fire/rescue / Räddningstjänsten). Totals and normalized base are approximate pending detailed line-item transcription from the official Swedish budget PDF.",
+  "dataStatus": "placeholder",
+  "normalization": {
+    "applied": true,
+    "excludedCategories": [
+      { "name": "Kunskapsnämnden (schools, K-12 + preschool)", "amount": 1746800000 },
+      { "name": "Äldrenämnden (eldercare / äldreomsorg)", "amount": 700000000 },
+      { "name": "Socialnämnden (social services, child welfare)", "amount": 420000000 },
+      { "name": "Funktionsstöd (LSS / disability support)", "amount": 200000000 }
+    ],
+    "note": "Excluded so percentages reflect a Canadian-comparable municipal scope. The 'totalOperating' field shows the un-normalized total (~3.5 Bn SEK) for transparency; bucket shares are computed against 'totalOperatingNormalized' (~945M SEK). Police is national in Sweden, not municipal."
+  },
+  "buckets": [
+    {
+      "taxonomyId": "public-safety",
+      "amount": 60000000,
+      "share": 0.0635,
+      "nativeDepartments": [
+        { "name": "Räddningstjänsten (municipal fire/rescue)", "amount": 60000000 },
+        { "name": "Note: police is a national service in Sweden — not in the municipal budget", "amount": 0 }
+      ]
+    },
+    {
+      "taxonomyId": "transportation",
+      "amount": 200000000,
+      "share": 0.2116,
+      "nativeDepartments": [
+        { "name": "Drift- och servicenämnden (roads, infrastructure operations) (estimated)", "amount": 200000000 },
+        { "name": "Note: regional/county transit (Blekingetrafiken) is funded by the region, not the kommun", "amount": 0 }
+      ]
+    },
+    {
+      "taxonomyId": "water-wastewater",
+      "amount": 0,
+      "share": 0,
+      "nativeDepartments": [
+        { "name": "Funded by Karlskrona Vatten AB (municipal utility company), separate from the kommun's tax-supported budget", "amount": 0 }
+      ]
+    },
+    {
+      "taxonomyId": "parks-recreation-culture",
+      "amount": 250000000,
+      "share": 0.2646,
+      "nativeDepartments": [
+        { "name": "Kultur- och fritidsnämnden (parks, libraries, sports facilities, culture) (estimated)", "amount": 250000000 }
+      ]
+    },
+    {
+      "taxonomyId": "planning-growth",
+      "amount": 90000000,
+      "share": 0.0952,
+      "nativeDepartments": [
+        { "name": "Miljö- och samhällsbyggnadsnämnden (planning, building permits, environment) (estimated)", "amount": 90000000 }
+      ]
+    },
+    {
+      "taxonomyId": "general-government",
+      "amount": 275000000,
+      "share": 0.2910,
+      "nativeDepartments": [
+        { "name": "Kommunstyrelsen + Kommunledningsförvaltningen (governance, admin, HR, IT, finance ops) (estimated)", "amount": 275000000 }
+      ]
+    },
+    {
+      "taxonomyId": "debt-fiscal",
+      "amount": 30000000,
+      "share": 0.0317,
+      "nativeDepartments": [
+        { "name": "Finansförvaltning — räntor och amorteringar (interest and principal) (estimated)", "amount": 30000000 }
+      ]
+    },
+    {
+      "taxonomyId": "other-grants",
+      "amount": 40000000,
+      "share": 0.0423,
+      "nativeDepartments": [
+        { "name": "Other grants, contingency (estimated)", "amount": 40000000 }
+      ]
+    }
+  ]
+}

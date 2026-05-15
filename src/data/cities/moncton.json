@@ -1,0 +1,86 @@
+{
+  "cityId": "moncton",
+  "displayName": "Moncton",
+  "country": "Canada",
+  "province": "NB",
+  "population": 79470,
+  "fiscalYear": 2026,
+  "currency": "CAD",
+  "totalOperating": 222471717,
+  "totalOperatingNormalized": 222471717,
+  "sourceUrl": "https://www5.moncton.ca/docs/councilmeetings/2023/2024_2026%20Budget_Document_Final.pdf",
+  "sourceLabel": "City of Moncton 2024-2026 Multi-Year Budget Document (Final)",
+  "lastUpdated": "2026-05-14",
+  "dataStatus": "transcribed-official",
+  "dataStatusNote": "Rolled up from the 10 administrative departments published in the 2024-2026 Multi-Year Budget Document (2026 budgeted column). Same source as the Home page detail view.",
+  "normalization": { "applied": false },
+  "buckets": [
+    {
+      "taxonomyId": "public-safety",
+      "amount": 71156443,
+      "share": 0.3198,
+      "nativeDepartments": [
+        { "name": "Protective Services (RCMP, Fire, bylaw, emergency)", "amount": 71156443 }
+      ]
+    },
+    {
+      "taxonomyId": "transportation",
+      "amount": 60485803,
+      "share": 0.2719,
+      "nativeDepartments": [
+        { "name": "Operations Services (roads, snow, sidewalks, traffic, parks maint., fleet)", "amount": 44557995 },
+        { "name": "Codiac Transpo (public transit)", "amount": 15927808 }
+      ]
+    },
+    {
+      "taxonomyId": "water-wastewater",
+      "amount": 0,
+      "share": 0,
+      "nativeDepartments": [
+        { "name": "Funded separately via the Moncton Water Utility (paid on the water bill, not property tax)", "amount": 0 }
+      ]
+    },
+    {
+      "taxonomyId": "parks-recreation-culture",
+      "amount": 20814285,
+      "share": 0.0936,
+      "nativeDepartments": [
+        { "name": "Community Services (arenas, pools, Coliseum, Zoo, Resurgo, Library, programming)", "amount": 20814285 }
+      ]
+    },
+    {
+      "taxonomyId": "planning-growth",
+      "amount": 8761044,
+      "share": 0.0394,
+      "nativeDepartments": [
+        { "name": "Sustainable Growth and Development Services", "amount": 8761044 }
+      ]
+    },
+    {
+      "taxonomyId": "general-government",
+      "amount": 11394734,
+      "share": 0.0512,
+      "nativeDepartments": [
+        { "name": "Corporate Services (communications, HR, IT)", "amount": 8630571 },
+        { "name": "Legal and City Clerk Services", "amount": 1431872 },
+        { "name": "Governance and Corporate Management (Mayor, Council, CAO)", "amount": 1332291 }
+      ]
+    },
+    {
+      "taxonomyId": "debt-fiscal",
+      "amount": 40905837,
+      "share": 0.1839,
+      "nativeDepartments": [
+        { "name": "Finance Services (fiscal cost, capital-from-operating, reserves, city-wide insurance/assessment)", "amount": 40905837 }
+      ]
+    },
+    {
+      "taxonomyId": "other-grants",
+      "amount": 8953571,
+      "share": 0.0402,
+      "nativeDepartments": [
+        { "name": "Grants to outside organizations (recreational, cultural, social-service, transportation)", "amount": 8953571 }
+      ]
+    }
+  ]
+}

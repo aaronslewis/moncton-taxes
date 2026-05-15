@@ -40,6 +40,7 @@ export const routes = [
     element: <AppLayout />,
     children: [
       { index: true, element: <Home /> },
+      { path: 'compare',     lazy: async () => ({ Component: (await import('./pages/Compare.jsx')).default }) },
       { path: 'methodology', lazy: async () => ({ Component: (await import('./pages/Methodology.jsx')).default }) },
       { path: 'about',       lazy: async () => ({ Component: (await import('./pages/About.jsx')).default }) },
       { path: '*',           element: <NotFound /> },

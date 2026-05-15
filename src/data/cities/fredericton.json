@@ -1,0 +1,84 @@
+{
+  "cityId": "fredericton",
+  "displayName": "Fredericton",
+  "country": "Canada",
+  "province": "NB",
+  "population": 63116,
+  "fiscalYear": 2026,
+  "currency": "CAD",
+  "totalOperating": 192979765,
+  "totalOperatingNormalized": 192979765,
+  "sourceUrl": "https://www.fredericton.ca/city-government/budget-finance",
+  "sourceLabel": "City of Fredericton 2026 General Fund Operating Budget (program-area summary, adopted 2025-11-24)",
+  "lastUpdated": "2026-05-14",
+  "dataStatus": "transcribed-official",
+  "dataStatusNote": "Transcribed from the eight program-area lines published on the City of Fredericton Budget & Finance page for the 2026 General Fund Operating Budget. The city's own headline total of $184.8M differs from the sum of program areas ($193.0M) because the headline nets out internal allocations (chiefly capital-from-operating recoveries inside Sustainable Infrastructure); the gross program-area figures are used here for like-for-like comparison with Moncton's gross departmental rollup. Water and Sewer Utility ($25.6M) is funded separately and is excluded.",
+  "normalization": { "applied": false },
+  "buckets": [
+    {
+      "taxonomyId": "public-safety",
+      "amount": 57304576,
+      "share": 0.2969,
+      "nativeDepartments": [
+        { "name": "Public Safety (Fredericton Police Force, Fire Department, by-law enforcement, emergency preparedness, animal control)", "amount": 57304576 }
+      ]
+    },
+    {
+      "taxonomyId": "transportation",
+      "amount": 24098368,
+      "share": 0.1249,
+      "nativeDepartments": [
+        { "name": "Mobility (roads, sidewalks, trails, transit, parking, fleet)", "amount": 24098368 }
+      ]
+    },
+    {
+      "taxonomyId": "water-wastewater",
+      "amount": 0,
+      "share": 0,
+      "nativeDepartments": [
+        { "name": "Funded separately via the Fredericton Water and Sewer Utility ($25.6M, paid on the utility bill, not property tax)", "amount": 0 }
+      ]
+    },
+    {
+      "taxonomyId": "parks-recreation-culture",
+      "amount": 21001302,
+      "share": 0.1088,
+      "nativeDepartments": [
+        { "name": "Livable Community (recreation, parks, community programs, beautification, culture)", "amount": 21001302 }
+      ]
+    },
+    {
+      "taxonomyId": "planning-growth",
+      "amount": 10034208,
+      "share": 0.052,
+      "nativeDepartments": [
+        { "name": "Economic Prosperity & Growth Planning (planning, housing, heritage, economic development)", "amount": 10034208 }
+      ]
+    },
+    {
+      "taxonomyId": "general-government",
+      "amount": 37459663,
+      "share": 0.1941,
+      "nativeDepartments": [
+        { "name": "Corporate Services (finance, HR, IT, legal, clerk, communications)", "amount": 31230126 },
+        { "name": "Governance & Civic Engagement (Council, leadership, First Nation relations)", "amount": 6229537 }
+      ]
+    },
+    {
+      "taxonomyId": "debt-fiscal",
+      "amount": 36044319,
+      "share": 0.1868,
+      "nativeDepartments": [
+        { "name": "Sustainable Infrastructure (capital-from-operating, asset management, debt servicing)", "amount": 36044319 }
+      ]
+    },
+    {
+      "taxonomyId": "other-grants",
+      "amount": 7037329,
+      "share": 0.0365,
+      "nativeDepartments": [
+        { "name": "Environmental Stewardship (solid-waste management, stormwater, arboriculture / urban forestry)", "amount": 7037329 }
+      ]
+    }
+  ]
+}

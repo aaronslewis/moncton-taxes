@@ -1,0 +1,91 @@
+{
+  "cityId": "esbjerg",
+  "displayName": "Esbjerg",
+  "country": "Denmark",
+  "population": 115748,
+  "fiscalYear": 2025,
+  "currency": "DKK",
+  "totalOperating": 9700000000,
+  "totalOperatingNormalized": 2230000000,
+  "sourceUrl": "https://www.esbjerg.dk/om-kommunen/kommunens-oekonomi/kommunens-budget",
+  "sourceLabel": "Esbjerg Kommune Budget 2025-2028 (agreed 2024-09-13)",
+  "lastUpdated": "2026-05-14",
+  "dataStatus": "partial-transcription",
+  "dataStatusNote": "Verified from Esbjerg Kommune's Budget 2025-2028 agreement: total kommune budget 9.7 billion DKK; new school masterplan investment 105 mio. DKK over 2025-28; adult social area strengthened by +40 mio. DKK/year. Like Karlskrona, Danish kommuner fund services Canadian municipalities don't: K-12 schools (Skoler), preschool/daycare (Dagtilbud), eldercare (Ældreomsorg), social services and unemployment transfers (Social & Arbejdsmarked). Those are excluded so percentages reflect a Canadian-comparable scope (~2.23 billion DKK). Police is national in Denmark, so public-safety is fire/rescue (Beredskab) only — typically a tiny share. Per-bucket amounts within the normalized scope are proportional estimates pending line-item transcription from the official kommune budget PDF.",
+  "normalization": {
+    "applied": true,
+    "excludedCategories": [
+      { "name": "Børne- og Familieudvalget (children, family, K-12 schools, daycare/dagtilbud)", "amount": 2720000000 },
+      { "name": "Sundheds- og Omsorgsudvalget (health and eldercare / ældreomsorg)", "amount": 3100000000 },
+      { "name": "Social- og Arbejdsmarkedsudvalget (social services, unemployment transfers, integration)", "amount": 1650000000 }
+    ],
+    "note": "Excluded so percentages reflect a Canadian-comparable municipal scope. The 'totalOperating' field shows the un-normalized total (9.7 Bn DKK) for transparency; bucket shares are computed against 'totalOperatingNormalized' (2.23 Bn DKK). Police is national in Denmark, not municipal."
+  },
+  "buckets": [
+    {
+      "taxonomyId": "public-safety",
+      "amount": 68000000,
+      "share": 0.0305,
+      "nativeDepartments": [
+        { "name": "Beredskab (fire/rescue — typically Sydvestjysk Brandvæsen regional service) (estimated)", "amount": 68000000 },
+        { "name": "Note: police is a national service in Denmark — not in the municipal budget", "amount": 0 }
+      ]
+    },
+    {
+      "taxonomyId": "transportation",
+      "amount": 582000000,
+      "share": 0.2610,
+      "nativeDepartments": [
+        { "name": "Teknik- og Byggeudvalget (roads, traffic, public buildings, maintenance) (estimated)", "amount": 582000000 }
+      ]
+    },
+    {
+      "taxonomyId": "water-wastewater",
+      "amount": 0,
+      "share": 0,
+      "nativeDepartments": [
+        { "name": "Run by DIN Forsyning A/S (the publicly-owned Esbjerg-Varde utility company), separate from the kommune's tax-supported budget", "amount": 0 }
+      ]
+    },
+    {
+      "taxonomyId": "parks-recreation-culture",
+      "amount": 388000000,
+      "share": 0.1740,
+      "nativeDepartments": [
+        { "name": "Kultur- og Fritidsudvalget (culture, libraries, sports facilities, parks, swimming pools) (estimated)", "amount": 388000000 }
+      ]
+    },
+    {
+      "taxonomyId": "planning-growth",
+      "amount": 145000000,
+      "share": 0.0650,
+      "nativeDepartments": [
+        { "name": "Plan- og Byudviklingsudvalget (planning, urban development, building permits, environment) (estimated)", "amount": 145000000 }
+      ]
+    },
+    {
+      "taxonomyId": "general-government",
+      "amount": 582000000,
+      "share": 0.2610,
+      "nativeDepartments": [
+        { "name": "Økonomiudvalget (governance, administration, HR, IT, finance ops, communications) (estimated)", "amount": 582000000 }
+      ]
+    },
+    {
+      "taxonomyId": "debt-fiscal",
+      "amount": 290000000,
+      "share": 0.1300,
+      "nativeDepartments": [
+        { "name": "Renter og afdrag — interest and principal on long-term debt (estimated)", "amount": 290000000 }
+      ]
+    },
+    {
+      "taxonomyId": "other-grants",
+      "amount": 175000000,
+      "share": 0.0785,
+      "nativeDepartments": [
+        { "name": "Grants to outside organizations, contingency, other (estimated)", "amount": 175000000 }
+      ]
+    }
+  ]
+}

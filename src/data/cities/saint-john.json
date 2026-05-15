@@ -1,0 +1,84 @@
+{
+  "cityId": "saint-john",
+  "displayName": "Saint John",
+  "country": "Canada",
+  "province": "NB",
+  "population": 69895,
+  "fiscalYear": 2026,
+  "currency": "CAD",
+  "totalOperating": 203000000,
+  "totalOperatingNormalized": 203000000,
+  "sourceUrl": "https://saintjohn.ca/en/city-hall/city-corporation/rates-and-finances/budget-summary",
+  "sourceLabel": "City of Saint John 2026 General Fund Operating Budget (Budget Summary page)",
+  "lastUpdated": "2026-05-14",
+  "dataStatus": "placeholder",
+  "dataStatusNote": "Two figures are confirmed from public sources: the 2026 total ($203M) and the 2026 Saint John Police Force allocation ($32M). The other bucket amounts are proportional estimates pending line-item transcription from the official PDF (the City's budget summary page returns 403 to automated tooling — direct access via browser is needed). For reference, the 2025 approved total was $194,394,563. Replace these placeholders once the 2026 service-area breakdown is in hand.",
+  "normalization": { "applied": false },
+  "buckets": [
+    {
+      "taxonomyId": "public-safety",
+      "amount": 60000000,
+      "share": 0.2956,
+      "nativeDepartments": [
+        { "name": "Saint John Police Force (~$32M, confirmed)", "amount": 32000000 },
+        { "name": "Saint John Fire Department (estimated)", "amount": 28000000 }
+      ]
+    },
+    {
+      "taxonomyId": "transportation",
+      "amount": 45000000,
+      "share": 0.2217,
+      "nativeDepartments": [
+        { "name": "Transportation & Public Works incl. transit (estimated)", "amount": 45000000 }
+      ]
+    },
+    {
+      "taxonomyId": "water-wastewater",
+      "amount": 0,
+      "share": 0,
+      "nativeDepartments": [
+        { "name": "Funded by the separate Saint John Water Utility Fund (paid on water bill, not property tax)", "amount": 0 }
+      ]
+    },
+    {
+      "taxonomyId": "parks-recreation-culture",
+      "amount": 24000000,
+      "share": 0.1182,
+      "nativeDepartments": [
+        { "name": "Recreation, Parks & Cultural Services (estimated)", "amount": 24000000 }
+      ]
+    },
+    {
+      "taxonomyId": "planning-growth",
+      "amount": 8000000,
+      "share": 0.0394,
+      "nativeDepartments": [
+        { "name": "Growth & Community Planning (estimated)", "amount": 8000000 }
+      ]
+    },
+    {
+      "taxonomyId": "general-government",
+      "amount": 19000000,
+      "share": 0.0936,
+      "nativeDepartments": [
+        { "name": "Corporate Services, City Manager, HR, IT, Legal (estimated)", "amount": 19000000 }
+      ]
+    },
+    {
+      "taxonomyId": "debt-fiscal",
+      "amount": 37000000,
+      "share": 0.1823,
+      "nativeDepartments": [
+        { "name": "Fiscal Services / debt servicing / capital from operating (estimated)", "amount": 37000000 }
+      ]
+    },
+    {
+      "taxonomyId": "other-grants",
+      "amount": 10000000,
+      "share": 0.0493,
+      "nativeDepartments": [
+        { "name": "Grants to outside agencies, contingency (estimated)", "amount": 10000000 }
+      ]
+    }
+  ]
+}

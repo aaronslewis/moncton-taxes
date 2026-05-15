@@ -1,0 +1,83 @@
+{
+  "cityId": "salisbury",
+  "displayName": "Salisbury",
+  "country": "Canada",
+  "province": "NB",
+  "population": 2700,
+  "fiscalYear": 2025,
+  "currency": "CAD",
+  "totalOperating": 7881268,
+  "totalOperatingNormalized": 7881268,
+  "sourceUrl": "https://salisburynb.ca/town-of-salisbury-approves-2025-operating-and-utility-budgets/",
+  "sourceLabel": "Town of Salisbury 2025 General Operating Budget (Council approval announcement)",
+  "lastUpdated": "2026-05-14",
+  "dataStatus": "placeholder",
+  "dataStatusNote": "Total ($7.88M) is confirmed from the Town's December 2024 council announcement; the bucket breakdown is a proportional estimate typical of small NB villages (heavy RCMP contract share, no own police, no transit). The Town did not publish a department-level breakdown in the public announcement. Wastewater is a separate $496K utility fund.",
+  "normalization": { "applied": false },
+  "buckets": [
+    {
+      "taxonomyId": "public-safety",
+      "amount": 2360000,
+      "share": 0.2995,
+      "nativeDepartments": [
+        { "name": "RCMP contract + Salisbury Fire Rescue + bylaw (estimated)", "amount": 2360000 }
+      ]
+    },
+    {
+      "taxonomyId": "transportation",
+      "amount": 1730000,
+      "share": 0.2195,
+      "nativeDepartments": [
+        { "name": "Transportation Services — roads, snow, streets (estimated)", "amount": 1730000 }
+      ]
+    },
+    {
+      "taxonomyId": "water-wastewater",
+      "amount": 0,
+      "share": 0,
+      "nativeDepartments": [
+        { "name": "Wastewater run as a separate $496K utility fund (paid on the user's bill)", "amount": 0 }
+      ]
+    },
+    {
+      "taxonomyId": "parks-recreation-culture",
+      "amount": 630000,
+      "share": 0.0799,
+      "nativeDepartments": [
+        { "name": "Recreation, parks, events, Highland Park, community programming (estimated)", "amount": 630000 }
+      ]
+    },
+    {
+      "taxonomyId": "planning-growth",
+      "amount": 310000,
+      "share": 0.0393,
+      "nativeDepartments": [
+        { "name": "Planning, development incentives — $150K Residential Development Incentive Program confirmed; rest estimated", "amount": 310000 }
+      ]
+    },
+    {
+      "taxonomyId": "general-government",
+      "amount": 1180000,
+      "share": 0.1497,
+      "nativeDepartments": [
+        { "name": "Council, clerk, administration, finance (estimated)", "amount": 1180000 }
+      ]
+    },
+    {
+      "taxonomyId": "debt-fiscal",
+      "amount": 1280000,
+      "share": 0.1624,
+      "nativeDepartments": [
+        { "name": "Debt servicing (incl. Fire Rescue Station financing) + ~$650K Capital Budget contribution (estimated)", "amount": 1280000 }
+      ]
+    },
+    {
+      "taxonomyId": "other-grants",
+      "amount": 391268,
+      "share": 0.0497,
+      "nativeDepartments": [
+        { "name": "Grants, contingency, other (estimated)", "amount": 391268 }
+      ]
+    }
+  ]
+}

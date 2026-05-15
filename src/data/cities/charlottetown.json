@@ -1,0 +1,83 @@
+{
+  "cityId": "charlottetown",
+  "displayName": "Charlottetown",
+  "country": "Canada",
+  "province": "PEI",
+  "population": 38809,
+  "fiscalYear": 2025,
+  "currency": "CAD",
+  "totalOperating": 110000000,
+  "totalOperatingNormalized": 110000000,
+  "sourceUrl": "https://www.charlottetown.ca/mayor___council/finance/annual_budget",
+  "sourceLabel": "City of Charlottetown 2025-26 Operating Budget (Annual Budget page)",
+  "lastUpdated": "2026-05-14",
+  "dataStatus": "placeholder",
+  "dataStatusNote": "Total ($110M for City Corporation + Water and Sewer Utility) and combined Police+Fire ($22.4M) are confirmed from the City's announcement; remaining bucket allocations are proportional estimates pending line-item transcription. The Water and Sewer Utility (a separately-funded portion of the $110M) is included for completeness — uncertainty here is meaningful and should be resolved with the official budget book.",
+  "normalization": { "applied": false },
+  "buckets": [
+    {
+      "taxonomyId": "public-safety",
+      "amount": 22400000,
+      "share": 0.2036,
+      "nativeDepartments": [
+        { "name": "Charlottetown Police Services + Fire Department (combined $22.4M, confirmed)", "amount": 22400000 }
+      ]
+    },
+    {
+      "taxonomyId": "transportation",
+      "amount": 16500000,
+      "share": 0.1500,
+      "nativeDepartments": [
+        { "name": "Public Works (roads, snow, sidewalks) + Charlottetown Transit (estimated)", "amount": 16500000 }
+      ]
+    },
+    {
+      "taxonomyId": "water-wastewater",
+      "amount": 0,
+      "share": 0,
+      "nativeDepartments": [
+        { "name": "Water and Sewer Utility is bundled in the $110M total but funded by user fees — treated as utility for comparison consistency", "amount": 0 }
+      ]
+    },
+    {
+      "taxonomyId": "parks-recreation-culture",
+      "amount": 15000000,
+      "share": 0.1364,
+      "nativeDepartments": [
+        { "name": "Parks & Recreation, Cultural Affairs (estimated)", "amount": 15000000 }
+      ]
+    },
+    {
+      "taxonomyId": "planning-growth",
+      "amount": 4500000,
+      "share": 0.0409,
+      "nativeDepartments": [
+        { "name": "Planning & Heritage, Economic Development (estimated)", "amount": 4500000 }
+      ]
+    },
+    {
+      "taxonomyId": "general-government",
+      "amount": 13000000,
+      "share": 0.1182,
+      "nativeDepartments": [
+        { "name": "Mayor & Council, CAO, Legal, Clerk, HR, IT, Finance ops (estimated)", "amount": 13000000 }
+      ]
+    },
+    {
+      "taxonomyId": "debt-fiscal",
+      "amount": 22000000,
+      "share": 0.2000,
+      "nativeDepartments": [
+        { "name": "Fiscal services / debt servicing / capital transfers (estimated)", "amount": 22000000 }
+      ]
+    },
+    {
+      "taxonomyId": "other-grants",
+      "amount": 16600000,
+      "share": 0.1509,
+      "nativeDepartments": [
+        { "name": "Water and Sewer Utility operating + grants and other (estimated)", "amount": 16600000 }
+      ]
+    }
+  ]
+}

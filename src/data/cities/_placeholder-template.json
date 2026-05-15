@@ -1,0 +1,28 @@
+{
+  "_comment": "This file is not imported. It exists as a template for new city data files.",
+  "cityId": "example",
+  "displayName": "Example City",
+  "country": "Canada",
+  "province": "NB",
+  "population": 0,
+  "fiscalYear": 2025,
+  "currency": "CAD",
+  "totalOperating": 0,
+  "totalOperatingNormalized": 0,
+  "sourceUrl": "",
+  "sourceLabel": "",
+  "lastUpdated": "2026-05-14",
+  "dataStatus": "placeholder",
+  "dataStatusNote": "Not yet transcribed from an official source.",
+  "normalization": { "applied": false },
+  "buckets": [
+    { "taxonomyId": "public-safety", "amount": 0, "share": null, "nativeDepartments": [] },
+    { "taxonomyId": "transportation", "amount": 0, "share": null, "nativeDepartments": [] },
+    { "taxonomyId": "water-wastewater", "amount": 0, "share": null, "nativeDepartments": [] },
+    { "taxonomyId": "parks-recreation-culture", "amount": 0, "share": null, "nativeDepartments": [] },
+    { "taxonomyId": "planning-growth", "amount": 0, "share": null, "nativeDepartments": [] },
+    { "taxonomyId": "general-government", "amount": 0, "share": null, "nativeDepartments": [] },
+    { "taxonomyId": "debt-fiscal", "amount": 0, "share": null, "nativeDepartments": [] },
+    { "taxonomyId": "other-grants", "amount": 0, "share": null, "nativeDepartments": [] }
+  ]
+}
