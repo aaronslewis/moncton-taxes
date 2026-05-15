@@ -39,6 +39,7 @@ export default function Navbar() {
               </NavLink>
               <NavLink to="/compare" className={getNavLinkClass} role="listitem">
                 Compare
+              </NavLink>
               <NavLink to="/voices" className={getNavLinkClass} role="listitem">
                 Voices
               </NavLink>
@@ -75,6 +76,7 @@ export default function Navbar() {
             </NavLink>
             <NavLink to="/compare" className={getMobileNavLinkClass} onClick={closeMenu}>
               Compare
+            </NavLink>
             <NavLink to="/voices" className={getMobileNavLinkClass} onClick={closeMenu}>
               Voices
             </NavLink>
