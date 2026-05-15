@@ -11,82 +11,86 @@
   "taxRate": 3.91081,
   "taxRateBase": 1000,
   "taxRateLabel": "Class 1 residential",
-  "taxRateNote": "Municipal portion only (the total tax bill also includes school, regional district, library, and BC Assessment levies). BC publishes rates as mills (per $1,000) rather than per $100.",
-  "typicalHomeValue": 770000,
-  "typicalHomeValueNote": "Back-computed from the City's confirmation that a typical single-family home pays just over $3,000 in 2025 municipal tax at the 3.91 mill rate. BC home values are roughly 2-3x NB equivalents.",
-  "totalOperating": 214000000,
-  "totalOperatingNormalized": 214000000,
-  "sourceUrl": "https://www.nanaimo.ca/your-government/budget-finance/budget-information",
-  "sourceLabel": "City of Nanaimo 2025-2029 Financial Plan (adopted May 2025)",
+  "taxRateNote": "2025 municipal mill rate (Class 1 residential). The City's 2025-2029 Financial Plan confirms a typical municipal tax bill of $3,081 on a $787,743 average BC Assessment value for 2025. Municipal portion only — total tax bill also includes school, regional district, library, hospital, and BC Assessment levies. BC publishes rates as mills (per $1,000) which we’ve converted to a % for direct comparison.",
+  "typicalHomeValue": 787743,
+  "typicalHomeValueNote": "Average 2025 BC Assessment value for Class 1 residential, as published in the City's 2025-2029 Financial Plan. Worth noting: BC home values are 2-3× NB equivalents, which is why Nanaimo's effective rate looks low even though the absolute tax bill ($3,081) is comparable to peer cities.",
+  "totalOperating": 215320309,
+  "totalOperatingNormalized": 215320309,
+  "sourceUrl": "https://www.nanaimo.ca/docs/departments/finance/2025-budget-documents/2025-2029-final-financial-plan.pdf",
+  "sourceLabel": "City of Nanaimo 2025-2029 Financial Plan (adopted by Council May 2025)",
   "lastUpdated": "2026-05-15",
-  "dataStatus": "partial-transcription",
-  "dataStatusNote": "Verified from the City of Nanaimo's 2025-2029 Financial Plan: operating budget $214M (a $13M increase over 2024), 168 RCMP members under contract (with 4 new members added in 2025), 20 new firefighters January 1, 2025 supporting the Fire Master Plan, plus 6 new Community Safety Officers. Nanaimo contracts the RCMP for policing — same model as Moncton (Codiac RCMP), so the public-safety bucket is directly comparable. Water and sewer run as a separate user-fee utility (not in general operating). Per-bucket amounts are proportional estimates pending line-item transcription from the official Financial Plan PDF.",
+  "dataStatus": "transcribed-official",
+  "dataStatusNote": "Transcribed from the City of Nanaimo 2025-2029 Financial Plan, 2025 Operating Expenditures by Department table. Worth noting how Nanaimo differs structurally: (1) public safety is much higher (38.7%) than NB/AB peers because Community Safety includes Fire + Bylaw + Parking, plus RCMP is a separate $36.6M line; (2) Nanaimo bundles Waterworks ($14.7M) and Sanitary Sewer ($4.6M) directly into the operating budget — other cities run these as separately-funded utilities not shown in operating; (3) debt service is embedded in departmental costs (the City reports it as small Internal Debt Repayment allocations rather than a standalone Fiscal Services line).",
   "normalization": { "applied": false },
   "buckets": [
     {
       "taxonomyId": "public-safety",
-      "amount": 68000000,
-      "share": 0.3178,
+      "amount": 83365042,
+      "share": 0.3872,
       "nativeDepartments": [
-        { "name": "RCMP contract — 168 members (estimated ~$36M based on contract size)", "amount": 36000000 },
-        { "name": "Nanaimo Fire Rescue (estimated ~$30M, expanded by 20 firefighters in 2025)", "amount": 30000000 },
-        { "name": "Bylaw, Community Safety Officers, emergency preparedness (estimated)", "amount": 2000000 }
+        { "name": "Community Services — Community Safety (Nanaimo Fire Rescue, Bylaw Enforcement, Parking, emergency management)", "amount": 46725016 },
+        { "name": "Community Services — RCMP (168-member contract budgeted at 92% of projected cost)", "amount": 36640026 }
       ]
     },
     {
       "taxonomyId": "transportation",
-      "amount": 50000000,
-      "share": 0.2336,
+      "amount": 32891068,
+      "share": 0.1528,
       "nativeDepartments": [
-        { "name": "Public Works, Engineering, transit operations (estimated)", "amount": 50000000 }
+        { "name": "Engineering & Public Works (roads, traffic, fleet, solid waste, drainage/stormwater, cemeteries, engineering services)", "amount": 32891068 }
       ]
     },
     {
       "taxonomyId": "water-wastewater",
-      "amount": 0,
-      "share": 0,
+      "amount": 19375199,
+      "share": 0.0900,
       "nativeDepartments": [
-        { "name": "Funded as a separate user-fee utility (water + sewer + sanitation revenues, paid on the utility bill, not property tax)", "amount": 0 }
+        { "name": "Waterworks (water treatment & distribution)", "amount": 14737768 },
+        { "name": "Sanitary Sewer (wastewater operations)", "amount": 4637431 },
+        { "name": "Note: unlike Moncton/Saint John/Fredericton/Lethbridge, Nanaimo includes water and sewer utility expenses directly in its operating budget rather than running them as a separate utility fund. Funding still primarily comes from user fees on the utility bill.", "amount": 0 }
       ]
     },
     {
       "taxonomyId": "parks-recreation-culture",
-      "amount": 28000000,
-      "share": 0.1308,
+      "amount": 41181560,
+      "share": 0.1913,
       "nativeDepartments": [
-        { "name": "Parks, Recreation & Culture (estimated)", "amount": 28000000 }
+        { "name": "Community Services — Parks, Recreation & Culture (parks, rec facilities, cultural operating grants — Port Theatre, Nanaimo Museum, Nanaimo Art Gallery)", "amount": 34296759 },
+        { "name": "Port of Nanaimo Centre (convention/event venue)", "amount": 6884801 }
       ]
     },
     {
       "taxonomyId": "planning-growth",
-      "amount": 8000000,
-      "share": 0.0374,
+      "amount": 8917469,
+      "share": 0.0414,
       "nativeDepartments": [
-        { "name": "Planning & Development (estimated)", "amount": 8000000 }
+        { "name": "Planning & Development (Community Planning, Sustainability, Business Licensing & Permit Centre, Current Planning, Subdivision, Development Engineering, Environmental Protection, Building Inspections)", "amount": 8917469 }
       ]
     },
     {
       "taxonomyId": "general-government",
-      "amount": 17000000,
-      "share": 0.0794,
+      "amount": 29589971,
+      "share": 0.1374,
       "nativeDepartments": [
-        { "name": "Corporate Services — HR, IT, Legal, Communications, Clerk, Council (estimated)", "amount": 17000000 }
+        { "name": "Corporate Services (Finance, Information Technology, Customer Service, internal support)", "amount": 21084169 },
+        { "name": "City Administration (CAO's Office, Human Resources, Legislative Services, Communications)", "amount": 7806178 },
+        { "name": "Corporate Facilities (city building maintenance)", "amount": 699624 }
       ]
     },
     {
       "taxonomyId": "debt-fiscal",
-      "amount": 35000000,
-      "share": 0.1636,
+      "amount": 0,
+      "share": 0,
       "nativeDepartments": [
-        { "name": "Fiscal Services — debt servicing, capital from operating, reserve contributions (estimated)", "amount": 35000000 }
+        { "name": "Nanaimo embeds debt service in departmental costs rather than breaking it out as a separate line. Internal Debt Repayment shows as a $0.5M allocation in the budget summary; outstanding debt covers Fire Stations #1 and #4, the Vancouver Island Conference Centre, solid-waste collection trucks, and the Water Treatment Plant.", "amount": 0 }
       ]
     },
     {
       "taxonomyId": "other-grants",
-      "amount": 8000000,
-      "share": 0.0374,
+      "amount": 0,
+      "share": 0,
       "nativeDepartments": [
-        { "name": "Grants to outside organizations, contingency, other (estimated)", "amount": 8000000 }
+        { "name": "Operating grants to cultural venues (Port Theatre, Nanaimo Museum, Nanaimo Art Gallery) are bundled inside Community Services — Parks, Recreation & Culture. There's no separate Grants line in this budget.", "amount": 0 }
       ]
     }
   ]
