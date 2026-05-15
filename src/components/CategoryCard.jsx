@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { formatCurrency, formatPercent } from '../lib/breakdown.js';
+import FeedbackPrompts from './FeedbackPrompts.jsx';
+import CouncilorEmailButton from './CouncilorEmailButton.jsx';
 
 function YoYBadge({ yoyPct }) {
   if (!Number.isFinite(yoyPct) || Math.abs(yoyPct) < 0.001) {
@@ -91,6 +93,18 @@ export default function CategoryCard({ category, taxPaid }) {
           {category.footnote && (
             <p className="category-footnote">{category.footnote}</p>
           )}
+        </div>
+      )}
+
+      {expanded && (
+        <div className="feedback-block">
+          <p className="feedback-block-heading">Share your perspective</p>
+          <FeedbackPrompts
+            variant="category"
+            categoryId={category.id}
+            categoryName={category.name}
+          />
+          <CouncilorEmailButton categoryName={category.name} />
         </div>
       )}
     </article>

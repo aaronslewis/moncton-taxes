@@ -1282,4 +1282,208 @@ input, select, textarea {
   .matrix-city-header { min-width: 90px; }
   .matrix-city-name { font-size: var(--text-sm); }
   .matrix-detail-inner { padding: var(--space-4) var(--space-3); }
+   Feedback prompts (inside CategoryCard + on Home & Voices)
+   ------------------------------------------------------------ */
+.feedback-block {
+  border-top: 1px solid var(--border);
+  background: var(--bg-white);
+  padding: var(--space-5);
+}
+
+.feedback-block-heading {
+  font-family: 'Inter Variable', 'Inter', sans-serif;
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent-dark);
+  font-weight: 700;
+  margin-bottom: var(--space-3);
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.feedback-form .form-input { font-family: inherit; }
+
+.feedback-radio-group {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feedback-radio-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.feedback-radio {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  cursor: pointer;
+  background: var(--bg-white);
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.feedback-radio:hover { border-color: var(--accent); }
+
+.feedback-radio input[type="radio"] {
+  accent-color: var(--accent);
+}
+
+.feedback-radio:has(input[type="radio"]:checked) {
+  border-color: var(--accent);
+  background: var(--accent-light);
+  color: var(--accent-dark);
+}
+
+.feedback-privacy {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.feedback-error {
+  color: #B91C1C;
+}
+
+.feedback-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.feedback-success {
+  background: var(--accent-light);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  color: var(--accent-dark);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.feedback-success strong { color: var(--accent-dark); }
+
+/* ------------------------------------------------------------
+   Councilor email button (inside CategoryCard)
+   ------------------------------------------------------------ */
+.councilor-email {
+  margin-top: var(--space-4);
+}
+
+.councilor-email-summary {
+  cursor: pointer;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.councilor-email-summary::-webkit-details-marker { display: none; }
+.councilor-email-summary::marker { content: ''; }
+
+.councilor-email-summary::after {
+  content: '▾';
+  font-size: 0.8em;
+  transition: transform var(--transition-fast);
+}
+
+.councilor-email[open] .councilor-email-summary::after {
+  transform: rotate(180deg);
+}
+
+.councilor-email-panel {
+  margin-top: var(--space-3);
+  padding: var(--space-4);
+  background: var(--colour-grey-50);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.councilor-email-note { margin: 0 0 var(--space-3); }
+
+.councilor-email-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-2);
+}
+
+.councilor-email-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  color: var(--slate);
+  border: 1px solid transparent;
+}
+
+.councilor-email-link:hover {
+  background: var(--accent-light);
+  border-color: var(--accent);
+  color: var(--accent-dark);
+}
+
+.councilor-name { font-weight: 600; }
+
+/* ------------------------------------------------------------
+   Voices page
+   ------------------------------------------------------------ */
+.voices-weeks {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-10);
+}
+
+.voices-week-heading {
+  font-family: 'Fraunces Variable', 'Fraunces', Georgia, serif;
+  font-size: var(--text-2xl);
+  color: var(--slate);
+  margin-bottom: var(--space-4);
+  letter-spacing: -0.01em;
+}
+
+.voices-theme-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.voices-theme {
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius-md);
+  padding: var(--space-4) var(--space-5);
+}
+
+.voices-theme-eyebrow {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0 0 var(--space-2);
+}
+
+.voices-theme-body {
+  font-size: var(--text-base);
+  color: var(--colour-grey-800);
+  line-height: 1.55;
+  margin: 0 0 var(--space-2);
 }
