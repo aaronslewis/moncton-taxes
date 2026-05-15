@@ -56,25 +56,31 @@ export function computeCompareObservations(cities) {
     });
   }
 
-  // 2. Public safety convergence — striking pattern across policing models
+  // 2. Public safety cluster — most cities cluster tightly, sometimes with outliers
   const psShares = visible
     .map((c) => ({ city: c, share: bucketShare(c, 'public-safety') ?? 0 }))
     .filter((s) => s.share > 0);
-  if (psShares.length >= 3) {
-    const min = psShares.reduce((a, b) => (a.share < b.share ? a : b));
-    const max = psShares.reduce((a, b) => (a.share > b.share ? a : b));
-    const spread = max.share - min.share;
-    if (spread < 0.06) {
-      const avgShare = psShares.reduce((s, c) => s + c.share, 0) / psShares.length;
+  if (psShares.length >= 4) {
+    const sorted = [...psShares].sort((a, b) => a.share - b.share);
+    const middle = sorted.slice(1, -1); // drop highest and lowest
+    const midMin = middle[0];
+    const midMax = middle[middle.length - 1];
+    const high = sorted[sorted.length - 1];
+    const low = sorted[0];
+    const middleSpread = midMax.share - midMin.share;
+    if (middleSpread < 0.04) {
+      const clusterAvg = (midMin.share + midMax.share) / 2;
       observations.push({
-        id: 'public-safety-convergence',
+        id: 'public-safety-cluster',
         title: "EVERYONE'S BIGGEST LINE",
-        headline: `~${Math.round(avgShare * 100)}% on public safety, across the board`,
+        headline: `~${Math.round(clusterAvg * 100)}% on public safety in most cities`,
         body:
-          `All ${psShares.length} cities allocate between ${fmtPct1(min.share)} and ` +
-          `${fmtPct1(max.share)} of their operating budget to police, fire, and emergency ` +
-          `services — whether they contract the RCMP (Moncton, Nanaimo) or run their own force ` +
-          `(Saint John, Fredericton, Lethbridge). The policing model doesn't seem to change the share.`,
+          `Most cities cluster between ${fmtPct1(midMin.share)} and ${fmtPct1(midMax.share)} of ` +
+          `their operating budget on police, fire, and emergency services — despite very different ` +
+          `policing models (RCMP contract vs. own municipal force). ` +
+          `${high.city.displayName} sits at the high end (${fmtPct1(high.share)}, partly because ` +
+          `bylaw and parking enforcement are bundled in there), and ${low.city.displayName} at the ` +
+          `low end (${fmtPct1(low.share)}).`,
       });
     }
   }
@@ -134,10 +140,28 @@ export function computeCompareObservations(cities) {
     });
   }
 
-  // 5. Water utility consistency — only fires if every city is at ~0%
-  const waterShares = visible.map((c) => bucketShare(c, 'water-wastewater') ?? 0);
-  const maxWater = Math.max(...waterShares);
-  if (maxWater < 0.01) {
+  // 5. Water utility pattern — describe how most cities exclude, name any that include
+  const waterEntries = visible.map((c) => ({
+    city: c,
+    share: bucketShare(c, 'water-wastewater') ?? 0,
+  }));
+  const excluded = waterEntries.filter((w) => w.share < 0.01);
+  const included = waterEntries.filter((w) => w.share >= 0.01);
+  if (excluded.length >= 3 && included.length >= 1 && visible.length >= 4) {
+    const inclusionList = included
+      .map((w) => `${w.city.displayName} (${fmtPct1(w.share)})`)
+      .join(', ');
+    observations.push({
+      id: 'water-utility-pattern',
+      title: 'WATER STRUCTURE VARIES',
+      headline: `${excluded.length} of ${visible.length} cities exclude water from operating`,
+      body:
+        `Most cities here run water and wastewater as separately-funded utilities — paid on the ` +
+        `water bill, not through property tax — so Water & Wastewater reads 0% in their operating ` +
+        `budget. ${inclusionList} ${included.length === 1 ? 'is the exception, bundling' : 'are the exceptions, bundling'} ` +
+        `utility expenses directly into operating expenditures.`,
+    });
+  } else if (excluded.length === visible.length && visible.length >= 3) {
     observations.push({
       id: 'water-utility',
       title: 'NOT IN YOUR PROPERTY TAX',
