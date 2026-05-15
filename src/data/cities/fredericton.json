@@ -12,6 +12,8 @@
   "taxRateBase": 100,
   "taxRateLabel": "residential, inside city",
   "taxRateNote": "Inside-city rate held steady for 2026 (covers ~88% of households). Annexed-area rate is 5 cents higher. Municipal portion only.",
+  "typicalHomeValue": 340000,
+  "typicalHomeValueNote": "Approximate typical assessed value — Fredericton's average sale price was ~$317K in Aug 2023 with continued growth into 2026.",
   "totalOperating": 192979765,
   "totalOperatingNormalized": 192979765,
   "sourceUrl": "https://www.fredericton.ca/city-government/budget-finance",

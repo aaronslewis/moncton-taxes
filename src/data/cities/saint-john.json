@@ -12,6 +12,8 @@
   "taxRateBase": 100,
   "taxRateLabel": "residential",
   "taxRateNote": "Reduced from $1.55 to $1.535 per $100 for 2026. Municipal portion only.",
+  "typicalHomeValue": 280000,
+  "typicalHomeValueNote": "Approximate typical assessed value for Saint John residential property; the city has historically had lower assessments than Moncton or Fredericton.",
   "totalOperating": 205078040,
   "totalOperatingNormalized": 205078040,
   "sourceUrl": "https://saintjohn.ca/en/city-hall/city-corporation/rates-and-finances/budget-summary",

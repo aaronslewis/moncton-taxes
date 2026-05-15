@@ -12,6 +12,8 @@
   "taxRateBase": 1000,
   "taxRateLabel": "residential",
   "taxRateNote": "Municipal mill rate only. Alberta tax bills also include a provincial education tax. Mills = dollars per $1,000 of assessed value.",
+  "typicalHomeValue": 400000,
+  "typicalHomeValueNote": "Approximate typical assessed value; the City's own example of municipal tax = $3,182 corresponds to a $400K home at the 7.9541 mill rate.",
   "totalOperating": 295000000,
   "totalOperatingNormalized": 295000000,
   "sourceUrl": "https://www.lethbridge.ca/council-administration-governance/budget-and-finances/operating-budget/",
