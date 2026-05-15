@@ -6,39 +6,43 @@
   "population": 106550,
   "populationMetro": 123847,
   "populationMetroLabel": "CMA",
-  "fiscalYear": 2025,
+  "fiscalYear": 2026,
   "currency": "CAD",
   "taxRate": 7.9541,
   "taxRateBase": 1000,
   "taxRateLabel": "residential",
-  "taxRateNote": "Municipal mill rate only. Alberta tax bills also include a provincial education tax. Mills = dollars per $1,000 of assessed value.",
-  "typicalHomeValue": 400000,
-  "typicalHomeValueNote": "Approximate typical assessed value; the City's own example of municipal tax = $3,182 corresponds to a $400K home at the 7.9541 mill rate.",
-  "totalOperating": 295000000,
-  "totalOperatingNormalized": 295000000,
+  "taxRateNote": "2025 municipal mill rate (2026 rate not yet finalized at time of writing). Alberta tax bills also include a provincial education tax. The City's 2023-2026 Operating Budget plans 5.10% annual levy increases. Mills = dollars per $1,000 of assessed value.",
+  "typicalHomeValue": 360000,
+  "typicalHomeValueNote": "Approximate single-family residential assessment in 2026. The City's 2023-2026 Operating Budget uses a reference assessment of $285,800 and projects a 2026 municipal tax bill of $2,881; we’ve adjusted upward to reflect ongoing assessment growth in Alberta.",
+  "totalOperating": 310356437,
+  "totalOperatingNormalized": 310356437,
   "sourceUrl": "https://www.lethbridge.ca/council-administration-governance/budget-and-finances/operating-budget/",
-  "sourceLabel": "City of Lethbridge 2023-2026 Four-Year Operating Budget (adopted Nov 29, 2022)",
+  "sourceLabel": "City of Lethbridge 2023-2026 Operating Budget (4-year approved cycle, 2026 column)",
   "lastUpdated": "2026-05-15",
-  "dataStatus": "partial-transcription",
-  "dataStatusNote": "Verified from the 2023-2026 Operating Budget: 2022 General Fund baseline $254M, with annual tax rate increases of ~5.1% — 2025 General Fund estimated at ~$295M. Lethbridge Police Service incremental funding through the four-year cycle: +$2.24M (2023), +$4.08M (2024), +$4.95M (2025), +$4.96M (2026) on top of baseline. Lethbridge runs its own municipal police service (unlike RCMP-contracted Moncton/Nanaimo) and also operates its own electric, water, and wastewater utilities — those are in the separate Utility Fund and excluded here. Per-bucket amounts in the General Fund are proportional estimates pending line-item transcription from the official 2023-2026 Operating Budget PDF.",
+  "dataStatus": "transcribed-official",
+  "dataStatusNote": "Transcribed from the City of Lethbridge 2023-2026 Operating Budget book (Tax-Supported / General Fund, 2026 column). Lethbridge runs its OWN municipal police service plus a separately-funded Utility Fund (water, wastewater, waste & recycling, and electric). The Utility Fund (~$206M) is excluded; only the Tax-Supported General Fund is shown here for apples-to-apples comparison with Moncton's operating budget. Stormwater ($1.98M) sits inside General Fund and is bucketed under Transportation to match Saint John's treatment.",
   "normalization": { "applied": false },
   "buckets": [
     {
       "taxonomyId": "public-safety",
-      "amount": 70000000,
-      "share": 0.2373,
+      "amount": 98395642,
+      "share": 0.3171,
       "nativeDepartments": [
-        { "name": "Lethbridge Police Service (own municipal force — estimated ~$42M)", "amount": 42000000 },
-        { "name": "Lethbridge Fire and Emergency Services (integrated Fire + EMS — estimated ~$28M)", "amount": 28000000 }
+        { "name": "Lethbridge Police Service (own municipal force)", "amount": 48376801 },
+        { "name": "Fire & Emergency Services (incl. integrated EMS, Public Safety Communications Centre)", "amount": 47868938 },
+        { "name": "Regulatory Services (animal control, business licensing, bylaw enforcement)", "amount": 2149903 }
       ]
     },
     {
       "taxonomyId": "transportation",
-      "amount": 65000000,
-      "share": 0.2203,
+      "amount": 47419078,
+      "share": 0.1528,
       "nativeDepartments": [
-        { "name": "Public Operations — roads, snow, fleet (estimated)", "amount": 50000000 },
-        { "name": "Lethbridge Transit (estimated)", "amount": 15000000 }
+        { "name": "Transportation (roads, snow removal, street sweeping, traffic signals, bridges)", "amount": 22676742 },
+        { "name": "Transit & Access-A-Ride", "amount": 20938163 },
+        { "name": "Stormwater (urban runoff / drainage)", "amount": 1983173 },
+        { "name": "Parking (planning & administration)", "amount": 1467300 },
+        { "name": "Fleet Services", "amount": 353700 }
       ]
     },
     {
@@ -46,47 +50,62 @@
       "amount": 0,
       "share": 0,
       "nativeDepartments": [
-        { "name": "Funded by the City's separate Utility Fund (water, wastewater, and electric run as municipal utilities — paid on utility bills, not property tax)", "amount": 0 }
+        { "name": "Water, Wastewater, Waste & Recycling, and Electric run as the City's separate Utility Fund (~$206M) — paid on utility bills, not property tax. Stormwater is the only water-related General Fund item and is shown under Transportation.", "amount": 0 }
       ]
     },
     {
       "taxonomyId": "parks-recreation-culture",
-      "amount": 38000000,
-      "share": 0.1288,
+      "amount": 55953271,
+      "share": 0.1803,
       "nativeDepartments": [
-        { "name": "Parks, Recreation & Culture (estimated)", "amount": 38000000 }
+        { "name": "Recreation & Culture (arenas, pools, theatres, arts, Nature Centre, Nikka Yuko Japanese Garden)", "amount": 18241025 },
+        { "name": "Parks & Cemeteries", "amount": 17162520 },
+        { "name": "ENMAX Centre (sports, entertainment, culture, tradeshow venue)", "amount": 9397000 },
+        { "name": "Lethbridge Public Library (Boards & Commissions)", "amount": 7835665 },
+        { "name": "Galt Museum & Archives + Fort Whoop-Up (Boards & Commissions)", "amount": 2268945 },
+        { "name": "Community Services Support (departmental overhead)", "amount": 1048116 }
       ]
     },
     {
       "taxonomyId": "planning-growth",
-      "amount": 12000000,
-      "share": 0.0407,
+      "amount": 12231915,
+      "share": 0.0394,
       "nativeDepartments": [
-        { "name": "Planning & Development Services, Economic Development (estimated)", "amount": 12000000 }
+        { "name": "Planning & Design (building permits, inspections, land-use compliance, growth planning)", "amount": 5738925 },
+        { "name": "Opportunity Lethbridge (land development, urban revitalization, Lethbridge Airport)", "amount": 4758960 },
+        { "name": "Lethbridge Land", "amount": 1734030 }
       ]
     },
     {
       "taxonomyId": "general-government",
-      "amount": 24000000,
-      "share": 0.0814,
+      "amount": 35749028,
+      "share": 0.1152,
       "nativeDepartments": [
-        { "name": "Corporate Administration — Finance, HR, IT, Legal, Communications, Council (estimated)", "amount": 24000000 }
+        { "name": "Finance & Corporate Performance", "amount": 7233230 },
+        { "name": "Information Technology Services & Digital Transformation", "amount": 5959504 },
+        { "name": "Facility Services", "amount": 14592739 },
+        { "name": "People & Culture (HR, payroll, training)", "amount": 2537953 },
+        { "name": "Mayor & City Council + City Manager's Office + City Clerk + City Solicitor", "amount": 3332636 },
+        { "name": "Customer Service & 311 + Corporate Services Support", "amount": 1142311 },
+        { "name": "Infrastructure Services Support (departmental overhead)", "amount": 950655 }
       ]
     },
     {
       "taxonomyId": "debt-fiscal",
-      "amount": 53000000,
-      "share": 0.1797,
+      "amount": 55259062,
+      "share": 0.1781,
       "nativeDepartments": [
-        { "name": "Fiscal Services — debt servicing, capital from operating, reserves (estimated)", "amount": 53000000 }
+        { "name": "Non-Departmental Revenues & Charges (city-wide fiscal accounts, transfers, contingency)", "amount": 40284062 },
+        { "name": "Pay-As-You-Go Capital Program (debt servicing + capital from operating)", "amount": 14885000 },
+        { "name": "Employee Welfare & Security", "amount": 90000 }
       ]
     },
     {
       "taxonomyId": "other-grants",
-      "amount": 33000000,
-      "share": 0.1119,
+      "amount": 5348443,
+      "share": 0.0172,
       "nativeDepartments": [
-        { "name": "Lethbridge Public Library Board operating grant + other community grants and contingency (estimated)", "amount": 33000000 }
+        { "name": "Community Social Development (community programs, social outreach, social services)", "amount": 5348443 }
       ]
     }
   ]
